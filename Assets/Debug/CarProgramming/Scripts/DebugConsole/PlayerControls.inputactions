@@ -1,0 +1,87 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "5ce25b15-7c8e-4347-80d4-716784696c63",
+            "actions": [
+                {
+                    "name": "Drive",
+                    "type": "Button",
+                    "id": "942c4528-6366-4e69-aca7-66f7f50ea2fe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Console",
+                    "type": "Button",
+                    "id": "cf476723-6783-4d95-98ef-08ccfd4655bb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "79b31c91-b678-4179-a695-1414c45000ca",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4e3960ff-8faa-425e-8556-087d4c5090ce",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "49d4bca6-0205-4e41-8316-79efcf850719",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "88c05191-256a-435d-9791-0808f7ddd340",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "52451168-c7d2-4cb6-8c7e-044c3cfaa9a2",
+                    "path": "<Keyboard>/slash",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Console",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
