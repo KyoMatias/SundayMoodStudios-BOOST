@@ -9,6 +9,7 @@ public class DebugController : MonoBehaviour
         string input;
 
         public static DebugCommand gm_race;
+        public static DebugCommand gm_debug;
 
         public List<object> commandList;
 
@@ -24,6 +25,16 @@ private void Awake()
     {
         ModeMaster.Instance.RaceModeActive();
     });
+
+    gm_debug = new DebugCommand("DebugCameraMode", "Switches to a debug camera instance that allows the player to freely move around in space", "gm_race", () =>
+    {
+        ModeMaster.Instance.DebugCamActive();
+    });
+
+    commandList = new List<object>
+    {
+        gm_race,
+    };
 }
 
 private void OnGUI()
