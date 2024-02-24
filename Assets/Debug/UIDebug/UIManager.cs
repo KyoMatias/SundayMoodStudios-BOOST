@@ -20,6 +20,9 @@ public class UIManager : MonoBehaviour
     public bool Takeover;
 
 
+    public 
+
+
     void Awake()
     {
         Cameras = false;
@@ -76,8 +79,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    // public void InitCamera(GameObject cam)
-    // {
-    //     Ui
-    // }
+
+    public void GMChecker()
+    {
+        //Create a switch case for this
+    }
 }

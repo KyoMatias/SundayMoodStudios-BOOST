@@ -9,11 +9,14 @@ public class DebugController : MonoBehaviour
         bool showConsole;
         string input;
 
-        [Header("Commandlines")]
         public static DebugCommand gm_race;
         public static DebugCommand gm_debug;
 
-        
+        public static DebugCommand<int> ui_toggle;
+
+
+
+
 
 
 
@@ -37,15 +40,21 @@ public void OnReturn(InputValue value)
 
 private void Awake()
 {
-    gm_race = new DebugCommand("race", "Switches GameMode To Race.", "gm_race", () =>
+    gm_race = new DebugCommand("race", "Switches GameMode To Race.", "race", () =>
     {
         ModeMaster.Instance.RaceModeActive();
     });
 
-    gm_debug = new DebugCommand("debug", "Switches to a debug camera instance that allows the player to freely move around in space", "gm_race", () =>
+    gm_debug = new DebugCommand("debug", "Switches to a debug camera instance that allows the player to freely move around in space", "debug", () =>
     {
         ModeMaster.Instance.DebugCamActive();
     });
+
+
+    // ui_toggle = new DebugCommand<int>("ui.camera", "Sets the DebugUI cameras to Active/Inactive", "ui_toggle <value>", (x) => 
+    // {
+    //      = x;
+    // });
 
     commandList = new List<object>
     {
