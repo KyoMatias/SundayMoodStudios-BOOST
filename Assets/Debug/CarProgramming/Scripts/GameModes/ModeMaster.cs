@@ -15,6 +15,8 @@ public class ModeMaster : MonoBehaviour
     //Creates a singleton Instance of the class in order for any other scripts to call the ModeMaster Instance and modify its parameters to its liking.
     public static ModeMaster Instance {get; private set;} 
 
+     public static GameMode CallGameMode; // DEBUG: Testing variable to be called to other scripts (This is currently used in the HUD Paremeters)
+
 
     //Safety Net for the instance variable.
     void Awake()
@@ -58,25 +60,24 @@ public class ModeMaster : MonoBehaviour
         
         */
     }
-
-    public static GameMode CallGameMode; // DEBUG: Testing variable to be called to other scripts (This is currently used in the HUD Paremeters)
+    
+   
 
     public void ChangeMode(int GMVal) // The main Function that controls the Gamemode cases. Needs to pass an integer to execute the funtion
     {
         GameMode currentMode = (GameMode)GMVal; //Fetches the Integer that will be used to value the switch case below
+        CallGameMode = currentMode;
 
         switch(currentMode)
         {
             case GameMode.RaceMode:
-            CallGameMode = currentMode;
             break;
 
             case GameMode.FreeMode:
-            CallGameMode = currentMode;
+
             break;
 
             case GameMode.DebugCam:
-            CallGameMode = currentMode;
             break;
 
             default:
