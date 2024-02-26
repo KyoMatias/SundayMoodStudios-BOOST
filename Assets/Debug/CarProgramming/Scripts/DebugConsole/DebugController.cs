@@ -11,14 +11,10 @@ public class DebugController : MonoBehaviour
 
         public static DebugCommand gm_race;
         public static DebugCommand gm_debug;
+        public static DebugCommand sw_RaceCam;
+        public static DebugCommand sw_debugcam;
 
         public static DebugCommand<int> ui_toggle;
-
-
-
-
-
-
 
         public List<object> commandList;
 
@@ -36,30 +32,39 @@ public void OnReturn(InputValue value)
     }
 }
 
-
-
 private void Awake()
 {
-    gm_race = new DebugCommand("race", "Switches GameMode To Race.", "race", () =>
+    //Beginning of Command Creation Parameters
+    gm_race = new DebugCommand("gm_race", "Switches GameMode To Race.", "race", () =>
     {
         ModeMaster.Instance.RaceModeActive();
     });
 
-    gm_debug = new DebugCommand("debug", "Switches to a debug camera instance that allows the player to freely move around in space", "debug", () =>
+    gm_debug = new DebugCommand("gm_debug", "Switches to a debug camera instance that allows the player to freely move around in space", "debug", () =>
     {
         ModeMaster.Instance.DebugCamActive();
     });
 
+    sw_RaceCam = new DebugCommand("sw_racecam", "Switches the Active Camera to a race cam instance","racecam", () =>
+    {
+        DebugCamera.SwitchtoPlayer?.Invoke();
+    });
+    
+    sw_debugcam = new DebugCommand("sw_debugcam", "Switches the active camera to a debug camera instance", "debugcam", ()=> 
+    {
+        DebugCamera.SwitchtoDebug?.Invoke();
+    });
 
-    // ui_toggle = new DebugCommand<int>("ui.camera", "Sets the DebugUI cameras to Active/Inactive", "ui_toggle <value>", (x) => 
-    // {
-    //      = x;
-    // });
 
+
+    //End of Command Creation Parameters
     commandList = new List<object>
     {
         gm_race,
         gm_debug,
+        sw_RaceCam,
+        sw_debugcam,
+
     };
 }
 
