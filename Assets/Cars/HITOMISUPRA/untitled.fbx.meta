@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: 810306a317ddcb84b808903731b482cc
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Interior_black
+    second: {fileID: 2100000, guid: d8619b8653c08354480fee1eaabd0782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: d8619b8653c08354480fee1eaabd0782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_body
+    second: {fileID: 2100000, guid: b840636b96369ae49a45c16c0bbc4e46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_carbon
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_defrost
+    second: {fileID: 2100000, guid: 311a0801fdd779c40afa5eabf1d1ea6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_disc
+    second: {fileID: 2100000, guid: bea0db2d634979c4db289f36a2255b3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_drift_rims
+    second: {fileID: 2100000, guid: dbfb870339cf402459197d626b666624, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_caliper
+    second: {fileID: 2100000, guid: 38439e4931e471b4c93e4335acde9bf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_lights_mask
+    second: {fileID: 2100000, guid: dbfb870339cf402459197d626b666624, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_metal
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_plastic
+    second: {fileID: 2100000, guid: a1604c954287bd541b6498f0db0851ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_radiator
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_rubber
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_underside
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_exterior_window_frame
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_glass
+    second: {fileID: 2100000, guid: 3c48e851c46ec3643b5f1c0f09c24582, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_int_windows
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_black_grade
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_car_paint
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_carpet
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_dash
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_details
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_glass
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_leather
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_leather_seats
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_metal
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_needles
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_pedals
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_plastic_detail
+    second: {fileID: 2100000, guid: d8619b8653c08354480fee1eaabd0782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_rubber
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_seatbelt
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_shift_base
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_shift_top
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_steer_02
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_interior_step
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_tyre
+    second: {fileID: 2100000, guid: f29af45c2079b9d47925a5811d5cfe3c, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
