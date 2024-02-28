@@ -53,7 +53,7 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -4
+    value: -18
   tint:
     overrideState: 1
     value: 0
@@ -104,10 +104,10 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 1, y: 0.99583405, z: 0.98333603, w: 0}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 0.9562959, z: 0.98178416, w: 0}
+    value: {x: 1, y: 0.9701767, z: 0.99859774, w: 0}
   gain:
     overrideState: 1
     value: {x: 1, y: 1, z: 1, w: 0}
@@ -1354,10 +1354,10 @@ MonoBehaviour:
     value: 1.26
   aperture:
     overrideState: 1
-    value: 5.6
+    value: 3.7
   focalLength:
     overrideState: 1
-    value: 48
+    value: 23
   kernelSize:
     overrideState: 1
     value: 1
@@ -1388,7 +1388,7 @@ MonoBehaviour:
     value: 0
   keyValue:
     overrideState: 1
-    value: 0.41
+    value: 0.32
   eyeAdaptation:
     overrideState: 1
     value: 0
