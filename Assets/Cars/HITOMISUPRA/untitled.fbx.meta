@@ -53,12 +53,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: supra_exterior_light_detail
-    second: {fileID: 2100000, guid: 989373cf3aa963a4b9762be31da93f6a, type: 2}
+    second: {fileID: 2100000, guid: a39396dc25dfcf646aef56c472d288dc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: supra_exterior_lights
-    second: {fileID: 2100000, guid: a39396dc25dfcf646aef56c472d288dc, type: 2}
+    second: {fileID: 2100000, guid: 25d683a5609ffb24da2ca959214845a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -99,6 +99,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: supra_glass
     second: {fileID: 2100000, guid: 3c48e851c46ec3643b5f1c0f09c24582, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: supra_glass_detail
+    second: {fileID: 2100000, guid: 25d683a5609ffb24da2ca959214845a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

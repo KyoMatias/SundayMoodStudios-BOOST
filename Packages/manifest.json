@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.rikoo.ui-post-process": "https://github.com/ErikRikoo/Unity-UI-Post-Process.git",
     "com.unity.cinemachine": "2.9.7",
     "com.unity.collab-proxy": "2.2.0",
     "com.unity.feature.worldbuilding": "1.0.1",

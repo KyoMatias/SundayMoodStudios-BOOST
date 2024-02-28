@@ -7,6 +7,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.rikoo.ui-post-process": {
+      "version": "https://github.com/ErikRikoo/Unity-UI-Post-Process.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b6a2537331a09ea4b613e39868429ca878874cee"
+    },
     "com.unity.cinemachine": {
       "version": "2.9.7",
       "depth": 0,
