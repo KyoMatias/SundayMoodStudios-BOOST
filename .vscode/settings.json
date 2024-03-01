@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "SundayMoodStudios-BOOST.sln"
+    "dotnet.defaultSolution": "Boost--SundayMood-Studios-.sln"
 }
