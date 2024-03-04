@@ -54,9 +54,11 @@ public class CarController : MonoBehaviour
 
     void FixedUpdate()
     {
+        speed = rb.velocity.magnitude;
         CheckInput();
         GetWheelPosition();
         ApplyGas();
+        ApplySteering();
     }
 
     public void CheckUserControl()
@@ -71,8 +73,32 @@ public class CarController : MonoBehaviour
     public void CheckInput()
     {
         Gas = Input.GetAxis("Vertical");
+        Steer = Input.GetAxis("Horizontal");
         float movingDirection = Vector3.Dot(transform.forward, rb.velocity);
+        slip = Vector3.Angle(transform.forward, rb.velocity-transform.forward);
+
+        if (movingDirection < -0.5f && Gas > 0)
+        {
+            Brake = Mathf.Abs(Gas);
+        }
+        else if (movingDirection > 0.5f && Gas < 0)
+        {
+            Brake = Mathf.Abs(Gas);
+        }
+        else
+        {
+            Brake = 0;
+        }
         
+    }
+
+     public void ApplyBrake()
+    {
+        _wheelCollider.FR.brakeTorque = Brake * BHP * 0.7f;
+        _wheelCollider.FL.brakeTorque = Brake * BHP * 0.7f;
+
+        _wheelCollider.BR.brakeTorque = Brake * BHP * 0.3f;
+        _wheelCollider.BR.brakeTorque = Brake * BHP * 0.3f;
     }
 
 
@@ -80,6 +106,13 @@ public class CarController : MonoBehaviour
     {
         _wheelCollider.BR.motorTorque = HP * Gas;
         _wheelCollider.BL.motorTorque = HP * Gas;
+    }
+
+      public void ApplySteering()
+    {
+        float steeringAngle = Steer * SteerCurve.Evaluate(speed);
+        _wheelCollider.FR.steerAngle = steeringAngle;
+        _wheelCollider.FL.steerAngle = steeringAngle;
     }
 
      public void GetWheelPosition()

@@ -23,7 +23,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: supra_body
-    second: {fileID: 2100000, guid: b840636b96369ae49a45c16c0bbc4e46, type: 2}
+    second: {fileID: 2100000, guid: 90a06ab1787875941b73010b71c16072, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
