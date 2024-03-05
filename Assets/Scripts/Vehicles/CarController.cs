@@ -15,6 +15,8 @@ public class CarController : MonoBehaviour
     public float BHP;
     public float slip;
     private float speed;
+
+    public float steerMultiplier;
     public AnimationCurve SteerCurve;
 
     //[Paramters for Car Physics]
@@ -110,7 +112,7 @@ public class CarController : MonoBehaviour
 
       public void ApplySteering()
     {
-        float steeringAngle = Steer * SteerCurve.Evaluate(speed);
+        float steeringAngle = Steer * steerMultiplier * SteerCurve.Evaluate(speed);
         _wheelCollider.FR.steerAngle = steeringAngle;
         _wheelCollider.FL.steerAngle = steeringAngle;
     }
