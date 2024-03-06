@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class EnableClickanywhere : MonoBehaviour
 {
+    [SerializeField] private GameObject m_scripts;
+
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(false);
+        m_scripts.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+    }
 
+    public void ClickAnywhere()
+    {
+         m_scripts.SetActive(true);
     }
 }

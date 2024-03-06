@@ -30,7 +30,7 @@ public class MainMenuManager : MonoBehaviour
 
     void Update()
     {
-        UpdateMainMenuToClickAnywhere(triggerEvent.IsClickable);
+
     }
 
     public bool UpdateMainMenuToClickAnywhere(bool value)
