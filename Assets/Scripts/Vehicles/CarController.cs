@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class CarController : MonoBehaviour
@@ -24,6 +25,8 @@ public class CarController : MonoBehaviour
     public WheelMeshes _wheelMeshes;
     public WheelColliders _wheelCollider;
 
+    WheelCollider[] wheels;
+
     [SerializeField] private string carname;
     // Start is called before the first frame update
 
@@ -44,13 +47,14 @@ public class CarController : MonoBehaviour
         public WheelCollider BR;
     }
 
-
+    
 
     void Start()
     {
         IsSequenced = true;
         CheckUserControl();
         rb = gameObject.GetComponent<Rigidbody>();
+        wheels = GetComponentInChildren<WheelCollider[]>();
     }
 
 
@@ -61,6 +65,15 @@ public class CarController : MonoBehaviour
         GetWheelPosition();
         ApplyGas();
         ApplySteering();
+        Cinematic();
+    }
+
+    void Cinematic()
+    {
+        if (IsSequenced)
+        {
+            
+        }
     }
 
     public void CheckUserControl()
@@ -132,6 +145,15 @@ public class CarController : MonoBehaviour
         wheelMesh.transform.position = position;
         wheelMesh.transform.rotation = rot;
     }
+
+
+/*    public void ChangeTraction()
+    {
+        foreach (WheelCollider wheel in wheels)
+        {
+            wheel.forwardFriction = 
+        }
+    }*/
 
 
 }

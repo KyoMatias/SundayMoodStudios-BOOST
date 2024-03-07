@@ -1,34 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuTrigger : MonoBehaviour
-{   
-    public delegate void Seq();
-    public static event Seq OnSequenceDone;
+{
+    LoadScene _sceneloader;
 
-    public bool IsClickable;
-
-    void OnEnable()
-
+/*
+    private void OnEnable()
     {
-        OnSequenceDone += StartMenu;
+        _sceneloader.OnSceneLoad += TriggerLoad;
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
-        OnSequenceDone -= StartMenu;
+        _sceneloader.OnSceneLoad -= TriggerLoad;
     }
+*/
 
-    void Awake()
+
+    void TriggerLoad()
     {
-        IsClickable = false;
+        SceneManager.LoadScene("GarageMain");
     }
-
-    public void StartMenu()
-    {
-        IsClickable = true;
-        OnSequenceDone?.Invoke();
-    }
-
 }
