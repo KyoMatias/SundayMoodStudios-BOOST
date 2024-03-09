@@ -370,9 +370,9 @@ MonoBehaviour:
   UI_Camera: {fileID: 1609041225}
   UI_Gamemode: {fileID: 1382532720}
   UI_Takeover: {fileID: 1775274008}
-  Cameras: 0
-  GameMode: 0
-  Takeover: 0
+  Cameras: 1
+  GameMode: 1
+  Takeover: 1
 --- !u!4 &169540570
 Transform:
   m_ObjectHideFlags: 0

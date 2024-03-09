@@ -3,7 +3,337 @@ guid: 49eb8e20262ddb14eb368a6cc8c730e3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Badge_Steer_HONDAGTS
+    second: {fileID: 2100000, guid: f9df363a826edb44ebda83426318f24a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ID39_engine_low
+    second: {fileID: 2100000, guid: 8ea33c4d992aa7a4c960bdffa9dd94b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_Display_AT
+    second: {fileID: 2100000, guid: 78ac0f913c6894448b389dd7eed74ece, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_symbols_emissive
+    second: {fileID: 2100000, guid: 38bed42f03ab3c14bad4e31d4c014122, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leather
+    second: {fileID: 2100000, guid: 21a43311baaf2b74abe8c46f4b5457a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #25
+    second: {fileID: 2100000, guid: 09ccce32b3ce3ee4f8d312bf14b7e185, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #27
+    second: {fileID: 2100000, guid: c8f47cc291244224d974670da4c43f71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_badges_skin
+    second: {fileID: 2100000, guid: 243d0f4b0741c134e814eb34298e0f9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_carbon_flat
+    second: {fileID: 2100000, guid: d56a9ae4ddcac4b449886157a2041368, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_cloth1
+    second: {fileID: 2100000, guid: edeea16ee7fa34848a5e8ed7f0d1ae68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_cockpit
+    second: {fileID: 2100000, guid: 24f7faba39b88654c8d35196e295a443, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_cockpit_2
+    second: {fileID: 2100000, guid: 4bc7cf663a1218a409f2ef8d54e98a3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_cockpit_glow
+    second: {fileID: 2100000, guid: 15ab30f5dff4121468f5dbe58586a669, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_cockpit_glow.001
+    second: {fileID: 2100000, guid: b1287c55f2b87624a85ec3844444c5ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_cockpit_metal
+    second: {fileID: 2100000, guid: 6df4ead23da08014387a2f92c3003d19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_cockpit_skin
+    second: {fileID: 2100000, guid: 34b18f15ee4115f4886ece45a6ae6231, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_disc
+    second: {fileID: 2100000, guid: 094cb6f8f6921e44d9901e7ad4640c2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_interior
+    second: {fileID: 2100000, guid: ead01abd8a7088d41ad48c80a3791cae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_lights
+    second: {fileID: 2100000, guid: b160a88e7f8e79546b9727dda1930504, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_lights_detail
+    second: {fileID: 2100000, guid: ed14dd6241d683840bb2cb0bdd19d5f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_misc
+    second: {fileID: 2100000, guid: 1ae6dab9b6353564ca32ae34b51175a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_misc_skin
+    second: {fileID: 2100000, guid: ced96c8796364df489167bd93d2fd2ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_paint
+    second: {fileID: 2100000, guid: 8d84a9921e86c424c8d95107420a5307, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_paint_aluminum
+    second: {fileID: 2100000, guid: 298f0b71469523e428f86e3a208bacdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_paint_black
+    second: {fileID: 2100000, guid: 1c37a4f8241b3fd4787ba0fc3a2cf1f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_paint_carbon
+    second: {fileID: 2100000, guid: 551684bb8c4095645a0890b5c2a53cba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_paint_carbon02
+    second: {fileID: 2100000, guid: 085a7b7e4c6466c4a922121236121281, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_rim
+    second: {fileID: 2100000, guid: 213f7e67045f73541a2828905936d1a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_rim_alpha
+    second: {fileID: 2100000, guid: 0e08098d03875f84ba9349fb56733028, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_sw_glow
+    second: {fileID: 2100000, guid: 53a42a99d11327941bf0de5eafaadecf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_sw_metal
+    second: {fileID: 2100000, guid: a67e0bea674e1fa4cb1195dd53bcfe31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: acura_nsx_17_windscreen
+    second: {fileID: 2100000, guid: d2fed8cb53f526a4498422f6cfa51ebe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: alcantara_dgrey_stiching_grey
+    second: {fileID: 2100000, guid: 866f862cf4e0eb741934664108e4d5d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: badge_steer_hondagts-1
+    second: {fileID: 2100000, guid: 0106022e628211f428fe132c44568077, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blacc
+    second: {fileID: 2100000, guid: 8c31ad70658e2084b90c7d478efa0de1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black_pentil
+    second: {fileID: 2100000, guid: 53a8caf25e3bf2e45a04d905f9988adf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cockpit_dials
+    second: {fileID: 2100000, guid: c33f5ddcd63f6e1459bb44084099e8c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cockpit_gauge
+    second: {fileID: 2100000, guid: cd0b7d23b351396409517ad8d0fa143d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dash_black_diff
+    second: {fileID: 2100000, guid: 1ca32bbbc385ae442bb4147bcd31d7cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: digi.002
+    second: {fileID: 2100000, guid: 0d1207cc1e9044f46ab46ea1d40d60c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: digi2.002
+    second: {fileID: 2100000, guid: 30117d8dfe16c9443924ec6138f00384, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: digi3
+    second: {fileID: 2100000, guid: 5719e32708ac6504d94e61450c528862, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: engine_black_smooth
+    second: {fileID: 2100000, guid: f3cc7db6f801def4784e1114a95d6d9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: engine_carbon
+    second: {fileID: 2100000, guid: 7745c859960c78f4d8a68d0e4b20a639, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: engine_chrome
+    second: {fileID: 2100000, guid: 0f3d39515bf5462458cc12ba2bdd9d4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: engine_silver
+    second: {fileID: 2100000, guid: 73a7b74c110fbcc4b8c77454bdd5d389, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_alcantara_black
+    second: {fileID: 2100000, guid: d52c0fa20f327874cab4bc3d47ecbff9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_carpet
+    second: {fileID: 2100000, guid: b1c0fb943510b744fa3bef1557f9b254, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_gauge_glass
+    second: {fileID: 2100000, guid: ff74fcc21a4956b4eb72a57dd84f5393, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_grille_cpit
+    second: {fileID: 2100000, guid: aeb868d832de45846a02663f703755af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_lcd
+    second: {fileID: 2100000, guid: c60daf6d137865e43b5aa137ce4a9e7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_lcd.004
+    second: {fileID: 2100000, guid: 6c570c5c9c8ed1d468f2779f7eb39617, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_leather_black
+    second: {fileID: 2100000, guid: 0142d2f6446cae9488858ab6af56f2a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_leather_black_stiching_white
+    second: {fileID: 2100000, guid: 9913b792fcc58184fb8c867f3662bd82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_leather_perf_black
+    second: {fileID: 2100000, guid: 6233d4413918c6a4781a826761182e93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_plastic_dash_black
+    second: {fileID: 2100000, guid: 64146685a49c6744db65c8c953e23cb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_tire
+    second: {fileID: 2100000, guid: 9e5b43872267be84aace89cb59b23a7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_tread
+    second: {fileID: 2100000, guid: 616024cb26f4d5944b3cb04fcc6d0d36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: generic_windows_headlight
+    second: {fileID: 2100000, guid: 813caed04ba6eeb41b8b457b838d4fef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grey_bg
+    second: {fileID: 2100000, guid: 35a979994f48a7c428d0529c1fb5aa63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gts_rim_material
+    second: {fileID: 2100000, guid: ed980284e0aac564c9a21549e0309a48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gts_rim_material_chrome
+    second: {fileID: 2100000, guid: b76b85ecd113afe4cb6e26626d6b3d23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: licplate_us
+    second: {fileID: 2100000, guid: 80e971012a9b3754fa9dba1110d31b82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_no_AO
+    second: {fileID: 2100000, guid: 0cd36f764e29fc94788ed78f44a92084, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mirrors
+    second: {fileID: 2100000, guid: 4c9ef0515a7b1f347bbce08db80f8f23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: navi
+    second: {fileID: 2100000, guid: 03386cb7a03126c4589ac414e937fe55, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

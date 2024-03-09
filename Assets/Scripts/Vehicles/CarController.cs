@@ -25,8 +25,6 @@ public class CarController : MonoBehaviour
     public WheelMeshes _wheelMeshes;
     public WheelColliders _wheelCollider;
 
-    WheelCollider[] wheels;
-
     [SerializeField] private string carname;
     // Start is called before the first frame update
 
@@ -54,7 +52,6 @@ public class CarController : MonoBehaviour
         IsSequenced = true;
         CheckUserControl();
         rb = gameObject.GetComponent<Rigidbody>();
-        wheels = GetComponentInChildren<WheelCollider[]>();
     }
 
 

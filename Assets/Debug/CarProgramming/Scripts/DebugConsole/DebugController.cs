@@ -13,6 +13,8 @@ public class DebugController : MonoBehaviour
         public static DebugCommand gm_debug;
         public static DebugCommand sw_RaceCam;
         public static DebugCommand sw_debugcam;
+        public static DebugCommand ui_takeover1;
+        public static DebugCommand ui_takeover0;
 
         public static DebugCommand<int> ui_toggle;
 
@@ -35,35 +37,48 @@ public void OnReturn(InputValue value)
 private void Awake()
 {
     //Beginning of Command Creation Parameters
-    gm_race = new DebugCommand("gm_race", "Switches GameMode To Race.", "race", () =>
+    gm_race = new DebugCommand("gm race", "Switches GameMode To Race.", "race", () =>
     {
         ModeMaster.Instance.RaceModeActive();
     });
 
-    gm_debug = new DebugCommand("gm_debug", "Switches to a debug camera instance that allows the player to freely move around in space", "debug", () =>
+    gm_debug = new DebugCommand("gm debug", "Switches to a debug camera instance that allows the player to freely move around in space", "debug", () =>
     {
         ModeMaster.Instance.DebugCamActive();
     });
 
-    sw_RaceCam = new DebugCommand("sw_racecam", "Switches the Active Camera to a race cam instance","racecam", () =>
+    sw_RaceCam = new DebugCommand("sw racecam", "Switches the Active Camera to a race cam instance","racecam", () =>
     {
         DebugCamera.SwitchtoPlayer?.Invoke();
     });
     
-    sw_debugcam = new DebugCommand("sw_debugcam", "Switches the active camera to a debug camera instance", "debugcam", ()=> 
+    sw_debugcam = new DebugCommand("sw debugcam", "Switches the active camera to a debug camera instance", "debugcam", ()=> 
     {
         DebugCamera.SwitchtoDebug?.Invoke();
     });
 
+    ui_takeover1 = new DebugCommand("takeover 1", "adds takeover text", "takeover", () =>
+        {
+            UIManager.Instance.ToggleTakeover(true);
+            UIManager.Instance.CheckCamera();
+        });
+    ui_takeover0 = new DebugCommand("takeover 0", "gets rid of the takeover text", "takeover", () =>
+        {
+            UIManager.Instance.ToggleTakeover(false);
+        });
 
 
-    //End of Command Creation Parameters
-    commandList = new List<object>
+
+
+        //End of Command Creation Parameters
+        commandList = new List<object>
     {
         gm_race,
         gm_debug,
         sw_RaceCam,
         sw_debugcam,
+        ui_takeover0,
+        ui_takeover1
 
     };
 }

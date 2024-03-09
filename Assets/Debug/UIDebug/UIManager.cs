@@ -7,7 +7,6 @@ public class UIManager : MonoBehaviour
 {
         public GameObject UI_Camera;
         public GameObject UI_Gamemode;
-
         public GameObject UI_Takeover;
     
     [Header("Camera Overlays")]
@@ -20,7 +19,7 @@ public class UIManager : MonoBehaviour
     public bool Takeover;
 
 
-    public 
+    public static UIManager Instance {  get; private set; }
 
 
     void Awake()
@@ -28,6 +27,16 @@ public class UIManager : MonoBehaviour
         Cameras = false;
         GameMode = false;
         Takeover = false;
+
+        if (Instance != null && Instance != this)//Catches if the instance is a duplicate, and destroys it if it is a duplicate.
+        {
+            Destroy(this);
+        }
+
+        else
+        {
+            Instance = this;//permamently sets the instance to this script.
+        }
     }
 
     // Start is called before the first frame update
@@ -44,7 +53,7 @@ public class UIManager : MonoBehaviour
         CheckData();
     }
 
-    void CheckCamera()
+    public void CheckCamera()
     {
         if(Cameras)
         {
@@ -56,7 +65,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void CheckData()
+    public void CheckData()
     {
         if(GameMode)
         {
@@ -68,7 +77,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void CheckOverlay()
+    public void CheckOverlay()
     {
         if(Takeover)
         {
@@ -77,6 +86,13 @@ public class UIManager : MonoBehaviour
         else{
             UI_Takeover.SetActive(false);
         }
+    }
+
+
+    public bool ToggleTakeover(bool value)
+    {
+        Takeover = value;
+        return Takeover;
     }
 
 
