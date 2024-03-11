@@ -485,7 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsSequenced: 0
   IsControlled: 0
-  Gas: 0
+  Gas: 1
   Brake: 0
   Steer: 0
   HP: 0

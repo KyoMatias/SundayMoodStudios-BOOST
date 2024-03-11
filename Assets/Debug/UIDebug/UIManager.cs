@@ -8,12 +8,15 @@ public class UIManager : MonoBehaviour
         public GameObject UI_Camera;
         public GameObject UI_Gamemode;
         public GameObject UI_Takeover;
+
+        public GameObject UI_Carstate;
     
     [Header("Camera Overlays")]
     public bool Cameras;
 
     [Header("Debug Data")]
     public bool GameMode;
+    public bool CarState;
 
     [Header("Takeover")]
     public bool Takeover;
@@ -27,6 +30,7 @@ public class UIManager : MonoBehaviour
         Cameras = false;
         GameMode = false;
         Takeover = false;
+        CarState =false;
 
         if (Instance != null && Instance != this)//Catches if the instance is a duplicate, and destroys it if it is a duplicate.
         {
@@ -75,7 +79,17 @@ public class UIManager : MonoBehaviour
         {
             UI_Gamemode.SetActive(false);
         }
+        if (CarState)
+        {
+            UI_Carstate.SetActive(true);
+        }
+        else
+        {
+            UI_Carstate.SetActive(false);
+        }
+        
     }
+
 
     public void CheckOverlay()
     {

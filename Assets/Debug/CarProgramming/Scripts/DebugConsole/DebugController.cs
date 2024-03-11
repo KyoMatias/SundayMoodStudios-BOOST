@@ -6,6 +6,11 @@ using UnityEngine.InputSystem;
 
 public class DebugController : MonoBehaviour
 {
+
+    private CarController m_carcontroller
+    {
+        get{return FindAnyObjectByType<CarController>();}
+    }
         bool showConsole;
         string input;
 
@@ -15,6 +20,12 @@ public class DebugController : MonoBehaviour
         public static DebugCommand sw_debugcam;
         public static DebugCommand ui_takeover1;
         public static DebugCommand ui_takeover0;
+        public static DebugCommand gm_activatecd;
+
+        public static DebugCommand cs_engineoff;
+        public static DebugCommand cs_engineon;
+        public static DebugCommand cs_burnout;
+        public static DebugCommand cs_race;
 
         public static DebugCommand<int> ui_toggle;
 
@@ -66,6 +77,26 @@ private void Awake()
         {
             UIManager.Instance.ToggleTakeover(false);
         });
+    gm_activatecd = new DebugCommand("gm resetcd", "starts a countdown sequence", "resetcd", () =>
+    {
+        ModeMaster.Instance.ActivateStartRace();
+    });
+    cs_engineoff = new DebugCommand("cs off","turns playercar engine off","cs engoff", ()=>
+    {
+        m_carcontroller.StateOff();
+    });
+    cs_engineon = new DebugCommand("cs on","turns playercar engine on","cs on", ()=>
+    {
+        m_carcontroller.StateOn();
+    });
+    cs_burnout = new DebugCommand("cs burnout","burnout mode","burnout", ()=>
+    {
+        m_carcontroller.StateBurnout();
+    });
+    cs_race = new DebugCommand("cs race","race mode","racemode", ()=>
+    {
+        m_carcontroller.StateRace();
+    });
 
 
 
@@ -78,7 +109,12 @@ private void Awake()
         sw_RaceCam,
         sw_debugcam,
         ui_takeover0,
-        ui_takeover1
+        ui_takeover1,
+        gm_activatecd,
+        cs_engineoff,
+        cs_engineon,
+        cs_burnout,
+        cs_race
 
     };
 }
@@ -123,3 +159,5 @@ void HandleInput()
 
     }
 }
+
+//new DebugCommand("","","", ()=>{});

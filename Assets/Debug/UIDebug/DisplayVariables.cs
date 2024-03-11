@@ -6,7 +6,7 @@ using UnityEngine;
 public class DisplayVariables : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI GM;
-    string GMtext;
+    [SerializeField] private TextMeshProUGUI CS;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,8 @@ public class DisplayVariables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        GM.text = ModeMaster.CallGameMode.ToString(); 
+        GM.text = ModeMaster.Instance.CallGameMode.ToString(); 
+        CS.text = CarController.carState.ToString();
     }
 
 }

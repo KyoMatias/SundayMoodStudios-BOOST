@@ -36,18 +36,6 @@ public class CinematicPhysics : MonoBehaviour
 
     public void GetWheelPosition()
     {
-        UpdateWheels(_wheelCollider.FR, _wheelMeshes.FRLm);
-        UpdateWheels(_wheelCollider.FL, _wheelMeshes.FLm);
-        UpdateWheels(_wheelCollider.BR, _wheelMeshes.RRm);
-        UpdateWheels(_wheelCollider.BL, _wheelMeshes.RLm);
-    }
-
-    public void UpdateWheels(WheelCollider col, MeshRenderer wheelMesh)
-    {
-        Quaternion rot;
-        Vector3 position;
-        col.GetWorldPose(out position, out rot);
-        wheelMesh.transform.position = position;
-        wheelMesh.transform.rotation = rot;
+        _wheelMeshes.RRm.transform.Rotate(0,0,0, Space.World);
     }
 }

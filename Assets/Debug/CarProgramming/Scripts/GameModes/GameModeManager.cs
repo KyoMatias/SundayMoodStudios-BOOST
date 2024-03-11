@@ -1,18 +1,52 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameModeManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public enum GameStates
     {
+        SplashScreen,
+        OP_Intro,
+        Garage_MainMenu,
+        Garage_Race,
+        Garage_Options,
+        Garage_Exit,
+    }
+    public static GameModeManager Instance {get; private set;}
+
+    public event Action OnEngage;   
+
+    private ModeMaster m_modemaster
+    {
+       get{ return FindObjectOfType<ModeMaster>();}
+    }
+    
+    void Awake()
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else 
+        {
+            Instance = this;
+        }
+        DontDestroyOnLoad(this);
+
+        m_modemaster.OnCountdownActivate += StartCountdown;
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void StartCountdown(bool val)
     {
-        
+        if(val)
+        {
+            OnEngage?.Invoke();
+            Debug.Log("CountdownStarted");
+        }
     }
 }

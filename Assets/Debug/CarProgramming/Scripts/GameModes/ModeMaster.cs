@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -14,9 +15,14 @@ public class ModeMaster : MonoBehaviour
 
     //Creates a singleton Instance of the class in order for any other scripts to call the ModeMaster Instance and modify its parameters to its liking.
     public static ModeMaster Instance {get; private set;} 
+    public CarController m_carcontroller
+    {
+        get{return FindObjectOfType<CarController>();}
+    }
 
-     public static GameMode CallGameMode; // DEBUG: Testing variable to be called to other scripts (This is currently used in the HUD Paremeters)
+    public event Action<bool> OnCountdownActivate; 
 
+     public GameMode CallGameMode; // DEBUG: Testing variable to be called to other scripts (This is currently used in the HUD Paremeters)
 
     //Safety Net for the instance variable.
     void Awake()
@@ -51,6 +57,9 @@ public class ModeMaster : MonoBehaviour
 
         DebugCam = 2,
 
+        Countdown = 3,
+
+
         /*Legend
             NIS = Non Interactable Sequence.
                 NIS has 3 Options
@@ -80,6 +89,10 @@ public class ModeMaster : MonoBehaviour
             case GameMode.DebugCam:
             break;
 
+            case GameMode.Countdown:
+                OnCountdownActivate?.Invoke(true);
+                m_carcontroller.StateBurnout();
+            break;
             default:
             break;
         }
@@ -108,6 +121,11 @@ public class ModeMaster : MonoBehaviour
     public void DebugCamActive()
     {
         ChangeMode(2);
+    }
+
+    public void ActivateStartRace()
+    {
+        ChangeMode(3);
     }
 
 
