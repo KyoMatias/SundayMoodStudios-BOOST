@@ -903,6 +903,18 @@ PrefabInstance:
       propertyPath: m_ForwardFriction.m_ExtremumSlip
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 155275652144575745, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 155275652144575745, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 155275652144575745, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 521662188488208362, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: m_Mass
       value: 1000
@@ -929,11 +941,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1008156300803100910, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008156300803100910, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1008156300803100910, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: m_ForwardFriction.m_ExtremumValue
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008156300803100910, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008156300803100910, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1923212984641773916, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: m_WheelDampingRate
@@ -949,11 +973,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1923212984641773916, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: m_ForwardFriction.m_ExtremumSlip
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923212984641773916, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1923212984641773916, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: m_ForwardFriction.m_ExtremumValue
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923212984641773916, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1923212984641773916, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2285609647085595311, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: HP
@@ -1060,8 +1096,16 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9209280172404577785, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_ForwardFriction.m_AsymptoteSlip
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9209280172404577785, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
       propertyPath: m_SidewaysFriction.m_ExtremumSlip
-      value: 0.2
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9209280172404577785, guid: 1631a0fc4582a3f418fc184053c92b05, type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumValue
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
