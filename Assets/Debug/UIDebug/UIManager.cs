@@ -27,10 +27,10 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
-        Cameras = false;
-        GameMode = false;
-        Takeover = false;
-        CarState =false;
+        Cameras = true;
+        GameMode = true;
+        Takeover = true;
+        CarState = true;
 
         if (Instance != null && Instance != this)//Catches if the instance is a duplicate, and destroys it if it is a duplicate.
         {
