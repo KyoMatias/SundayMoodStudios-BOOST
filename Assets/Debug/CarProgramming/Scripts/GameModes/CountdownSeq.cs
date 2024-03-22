@@ -45,6 +45,11 @@ public class CountdownSeq : MonoBehaviour
         CheckCountdown(true);
     }
 
+    public void ResetCD()
+    {
+        CheckCountdown(false);
+    }
+
     private bool CheckCountdown(bool val)
     {
         ActivatedCountdown = val;
