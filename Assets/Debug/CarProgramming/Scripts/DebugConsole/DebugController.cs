@@ -7,13 +7,15 @@ using UnityEngine.InputSystem;
 public class DebugController : MonoBehaviour
 {
 
-    private CarController m_carcontroller
+    private CarController m_carcontroller // Creates the class from the car controller script.
     {
-        get{return FindAnyObjectByType<CarController>();}
+        get{return FindAnyObjectByType<CarController>();}// fetches the carcontroller script by finding the game object
     }
-        bool showConsole;
-        string input;
+        bool showConsole;// Boolean variable for showing console.
+        string input;// Input data parameter (responsible for holding the data)
 
+
+        #region 
         public static DebugCommand gm_race;
         public static DebugCommand gm_debug;
         public static DebugCommand sw_RaceCam;
@@ -28,6 +30,7 @@ public class DebugController : MonoBehaviour
         public static DebugCommand cs_race;
 
         public static DebugCommand<int> ui_toggle;
+        #endregion
 
         public List<object> commandList;
 
@@ -79,7 +82,7 @@ private void Awake()
         });
     gm_activatecd = new DebugCommand("gm resetcd", "starts a countdown sequence", "resetcd", () =>
     {
-        ModeMaster.Instance.ActivateStartRace();
+        //ModeMaster.Instance.ActivateStartRace();
     });
     cs_engineoff = new DebugCommand("cs off","turns playercar engine off","cs engoff", ()=>
     {
