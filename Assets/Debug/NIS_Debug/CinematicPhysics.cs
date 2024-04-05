@@ -12,7 +12,7 @@ public class CinematicPhysics : MonoBehaviour
     public class WheelMeshes
     {
         public MeshRenderer FLm;
-        public MeshRenderer FRLm;
+        public MeshRenderer FRm;
         public MeshRenderer RLm;
         public MeshRenderer RRm;
     }
@@ -28,14 +28,28 @@ public class CinematicPhysics : MonoBehaviour
 
 
 
+    private void Awake() {
+
+    }
     private void FixedUpdate()
     {
         GetWheelPosition();
     }
 
 
-    public void GetWheelPosition()
+     public void GetWheelPosition()
     {
-        _wheelMeshes.RRm.transform.Rotate(0,0,0, Space.World);
+        UpdateWheels(_wheelCollider.FR, _wheelMeshes.FRm);
+        UpdateWheels(_wheelCollider.FL, _wheelMeshes.FLm);
+        UpdateWheels(_wheelCollider.BR, _wheelMeshes.RRm);
+        UpdateWheels(_wheelCollider.BL, _wheelMeshes.RLm);
+    }
+    public void UpdateWheels(WheelCollider col, MeshRenderer wheelMesh)
+    {
+        Quaternion rot;
+        Vector3 position;
+        col.GetWorldPose(out position, out rot);
+        wheelMesh.transform.position = position;
+        wheelMesh.transform.rotation = rot;
     }
 }
