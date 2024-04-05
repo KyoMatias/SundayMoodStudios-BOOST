@@ -18,6 +18,7 @@ public class GameModeManager : MonoBehaviour
     public static GameModeManager Instance {get; private set;}
 
     public event Action OnEngage;   
+    public event Action OnResetCD;
 
     private ModeMaster m_modemaster
     {
@@ -47,6 +48,11 @@ public class GameModeManager : MonoBehaviour
         {
             OnEngage?.Invoke();
             Debug.Log("CountdownStarted");
+        }
+        else if(!val)
+        {
+            OnResetCD?.Invoke();
+            Debug.Log("Countdown Reset");
         }
     }
 }
