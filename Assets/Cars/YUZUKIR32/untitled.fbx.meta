@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 89cf3d9b64846e64a916f702378f2f98
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01___Default
+    second: {fileID: 2100000, guid: 5744618a4f2f81a439f5c3096d3c44b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 4364454
+    second: {fileID: 2100000, guid: f4e80fe87b28c25469af66b25b369852, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_BLACK
+    second: {fileID: 2100000, guid: 71446d14b83ad0944866365f02daff5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_BLACK_GLASS
+    second: {fileID: 2100000, guid: 6c88e9f5a795887449e1abfc27e197ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_BLACK_PLASTIC
+    second: {fileID: 2100000, guid: 1709b57b0a0118b47af413aa586400b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_BODY
+    second: {fileID: 2100000, guid: 0e2bdb89eede84f47a5fcaf3adb49922, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_CALIPERS
+    second: {fileID: 2100000, guid: 542e68a274084654685ec08ce3590102, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_CALIPERS_STICKERS
+    second: {fileID: 2100000, guid: ccb7490bba36fb9468795bbe69d7f954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_CHROME
+    second: {fileID: 2100000, guid: a57bb0d732b5afe449cdc46c02d93bc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_DISCS
+    second: {fileID: 2100000, guid: 8eea45182470e06439e3c660cd3ccccd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_FRONT_BLINKERS_GLASS
+    second: {fileID: 2100000, guid: 8d129bafaa6d9b44fb9b4d5187cc94f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_GT_LOGOS
+    second: {fileID: 2100000, guid: 2863e1bf4a24f6d4b860c147c3e2ba8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_HEADLIGHTS_CHROME
+    second: {fileID: 2100000, guid: e0d59fe88f6fbec45907a13dead77b01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_HEADLIGHTS_GLASS
+    second: {fileID: 2100000, guid: e8670e9df0058bc40a49046e5641e93e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_HEADLIGHTS_LOW_BEAM_BULB
+    second: {fileID: 2100000, guid: de7de6e31bbe3174b8eff35f6a3feaa0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_INTERCOOLER
+    second: {fileID: 2100000, guid: 75c052014710018479c172da218c5118, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_INTERCOOLER_SIDES
+    second: {fileID: 2100000, guid: f96c6b6689ca0cb4da5b127abfe7954b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_LOCKS
+    second: {fileID: 2100000, guid: bdbe527c62f7c194a85035531e0069af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_METAL_001
+    second: {fileID: 2100000, guid: 62d2e9b158913a242aacb4b4292e6425, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_MIRRORS
+    second: {fileID: 2100000, guid: 121191e6705be5046a8633f2c9bd7e37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_PLASTIC
+    second: {fileID: 2100000, guid: 79573794fadd68c418b9b5221d624ce6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_REAR_BLINKERS
+    second: {fileID: 2100000, guid: 71a0da627999ff242ae4ec3ed5d93b14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_REAR_PLATE_LIGHT
+    second: {fileID: 2100000, guid: 6bafb511bb33de54480e3e4eb3efac68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_REVERSE_LIGHTS
+    second: {fileID: 2100000, guid: 2841e44eb37d36145b758321ce8e1471, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_REVERSE_LIGHTS_CHROME
+    second: {fileID: 2100000, guid: 598bfc717d2ca154f9a0c16245fa0996, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_R_LOGO
+    second: {fileID: 2100000, guid: a5c85ad4d94d14c40893b197ba61b876, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_TAILLIGHTS_CHROME
+    second: {fileID: 2100000, guid: 4d3c59bbe12b1f242b0d803479568499, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_TAILLIGHTS_GLASS
+    second: {fileID: 2100000, guid: a8af0ea9ef60db54281718fdc9a694e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_TAILLIGHTS_INNER
+    second: {fileID: 2100000, guid: f9e48fd525b9ed148b291ba9ffb3815f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_TAILLIGHTS_OUTER
+    second: {fileID: 2100000, guid: ec5c5a95751ff9d49ba706f23c827a55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_TAILLIGHTS_REFLECTORS
+    second: {fileID: 2100000, guid: ccef4c56ff06fd840a388a9c0293ea6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_TAILLIGHT_BLINKER_INSIDES
+    second: {fileID: 2100000, guid: b1c5ff0ed0c0db143a483115d9240fba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_TRIM
+    second: {fileID: 2100000, guid: ae8faa7fb9c15f64fb1c57cdaf3ad626, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_UNDERBODY
+    second: {fileID: 2100000, guid: 9303ad18153960f44808ebb62b1a8464, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EXT_WINDOWS
+    second: {fileID: 2100000, guid: f1d63b87b48d69446ad2c2191d498acd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_BANNER
+    second: {fileID: 2100000, guid: ce7a6cc7d992ac448a98d21479051945, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_CAGE_SHDR
+    second: {fileID: 2100000, guid: 5bfb0e0fb84460846b99320829ccc694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_CARPET
+    second: {fileID: 2100000, guid: 4dd920dcbca5c474b81e7dd84c92d360, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_CLIMATECONTROL
+    second: {fileID: 2100000, guid: 5c9e7be96bb5ecd40b0175f7ebd61d3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_CLOCK
+    second: {fileID: 2100000, guid: 1c5d2968024d4874980267fe823e1a05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_CLOTH
+    second: {fileID: 2100000, guid: 26aab176cacd02a4fbb3ae43d8c237ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_DASH_SQUAREDTEXTURE
+    second: {fileID: 2100000, guid: 7915c1e0e7a791648b4d500dd1d705a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_DECALS
+    second: {fileID: 2100000, guid: 75896fa475fbf3f4e9c235b57ccb91d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_FAKE_LEATHER
+    second: {fileID: 2100000, guid: ccfd3f029d91bc44fa8c4435fc0098b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_FLOORMATS
+    second: {fileID: 2100000, guid: 624db36f55f46b84d9aa882101a9c1e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_FLOORMATS_RUBBER
+    second: {fileID: 2100000, guid: d922145021c2dab4894e287d3ccc82f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_GAUGES
+    second: {fileID: 2100000, guid: 3ca1dfba0ef10de43ae105b858921b1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_GAUGES_TRANS
+    second: {fileID: 2100000, guid: 96c3898e3c052774582e17a028a3866e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_GLASS
+    second: {fileID: 2100000, guid: 8ca303c88c80f3d4eb367937487698be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_Gauge_Chrome
+    second: {fileID: 2100000, guid: f230e824579b6704daec3e38ccd885b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_Gauge_Dark
+    second: {fileID: 2100000, guid: 5cbbe9316a6341b46ad9158822830a05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_Gauge_Decal
+    second: {fileID: 2100000, guid: e4e12e0c34b99904db038a2e69ac7e4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_Gauge_Needles
+    second: {fileID: 2100000, guid: 3664fc1722c5b5e4789daa3ee13d12f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_HEADLINER
+    second: {fileID: 2100000, guid: 0bbabe26ffc175242996edb3cac3effb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_KEY_GTR_GUARDRAILCERTIFIED
+    second: {fileID: 2100000, guid: e102f8bd7a845124d83da5c6cc535d4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_LEATHER
+    second: {fileID: 2100000, guid: b60c1aca1836bc44b82624b3512be5e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_LOGOS
+    second: {fileID: 2100000, guid: dd0938e903f8be54fadf6377abd877bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_LOGOS_FUCKGTSPORTBRAINDEADPEOPLEWHOCANTMAKENORMALTE_f71d839
+    second: {fileID: 2100000, guid: 403ea9b7c1a524c41b2bf6ac5367f16e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_METAL
+    second: {fileID: 2100000, guid: 7b384f4c5c718644786b04966fbbbcde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_N1_PLATE
+    second: {fileID: 2100000, guid: 7ef72af28c8d5074aa88c3a4fd6119bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_NEEDLE_RED
+    second: {fileID: 2100000, guid: c83c1c86d4c160243bf94b0e186be756, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_ODOMETER_CLUSTERLIGHTS
+    second: {fileID: 2100000, guid: 1c5c407b62f23284193abe40e28ba1bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_PLASTIC
+    second: {fileID: 2100000, guid: 2ea2810f27c407542967cf85658b03c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEATBELTS
+    second: {fileID: 2100000, guid: 5644927c8a2c0be4884c5e632446f523, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEATBELT_01
+    second: {fileID: 2100000, guid: 2137f4634728c844dadb75b5241fb2a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEATBELT_02
+    second: {fileID: 2100000, guid: 05e1c18c64622f14cbe156a640266b4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEATBELT_BACKSEAT
+    second: {fileID: 2100000, guid: 2834a064b73bfc049ab0241f7c26ca50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEATS
+    second: {fileID: 2100000, guid: bffe9b366ed989c419785734c9b9793f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEAT_01
+    second: {fileID: 2100000, guid: 9831b56f5d7c58b439134b7b93ddf555, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEAT_02
+    second: {fileID: 2100000, guid: 08044ebe0f1991b4a86212372f2f14c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SEAT_DRIVER
+    second: {fileID: 2100000, guid: ce83376806f7df04b95f7562d3ad54a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_SPEAKERS
+    second: {fileID: 2100000, guid: 15e73439f0afb6141b6a187be985b321, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_WINDOWS
+    second: {fileID: 2100000, guid: 4cd602a1e3f16c24d85b573264d5936f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_glossy_gllights
+    second: {fileID: 2100000, guid: 37017d8da68fa37488f0cca76864a1b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: INT_signals_details
+    second: {fileID: 2100000, guid: 5d7ef93e0f81d68429d1c2658f73ddce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Intercooller
+    second: {fileID: 2100000, guid: 609ad2ce72c4de1439fe72ba0793f5fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #26
+    second: {fileID: 2100000, guid: de62b4b12742e4d478fa5c8d676e5271, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #49
+    second: {fileID: 2100000, guid: e23d4cbc082962b43bf6fa7a65d63a6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: R32_Exhaust
+    second: {fileID: 2100000, guid: 58bcb533b5fa48445be9abee10efb2b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: R32_Ext_Plastic
+    second: {fileID: 2100000, guid: 9dbf6e866e273304e957fa5c78da7d7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SwheelChrome
+    second: {fileID: 2100000, guid: f2cbfda39e4b7974fbb81102157d527e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: bb25c613caf3d464596864917e1de956, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chromepin
+    second: {fileID: 2100000, guid: c530c6bb843a64b48be138fbdef490a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leatherWheelAO
+    second: {fileID: 2100000, guid: 8b32fbc58d4b35d459f2f9b4933a017a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plate_1
+    second: {fileID: 2100000, guid: 94a06663d8d466e4aacddaa9ae81927c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plate_number
+    second: {fileID: 2100000, guid: 887e6550b5487a247bec661eac8611fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: setka
+    second: {fileID: 2100000, guid: 45113228b5d724940922a33311ab07db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shifter_sticker
+    second: {fileID: 2100000, guid: d7c7a03c1a33f714ab72433aec07908d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tyres
+    second: {fileID: 2100000, guid: 13ad964736966e046b46b0fc460fb709, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheelGoldMetal
+    second: {fileID: 2100000, guid: a13f474304cb3914f8fa9fda16de4bc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheelMetalCOUTER
+    second: {fileID: 2100000, guid: 731921c6140f8e14f9ce60e5f9a21f12, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
