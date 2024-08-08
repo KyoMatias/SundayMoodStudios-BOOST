@@ -1,10 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using static CarController;
 
 public class CinematicPhysics : MonoBehaviour
 {
+
+    [SerializeField] private enum CinematicState
+    {
+        Stationary,
+        FreeWheel,
+        Lock,
+        Neutral,
+    }
+
+    [SerializeField] private CinematicState CineState;
     public WheelMeshes _wheelMeshes;
     public WheelColliders _wheelCollider;
     [System.Serializable]
@@ -31,10 +42,46 @@ public class CinematicPhysics : MonoBehaviour
     private void Awake() {
 
     }
-    private void FixedUpdate()
+
+    public void FixedUpdate()
     {
         GetWheelPosition();
+        CinePhysics_UpdateState();
         
+
+    }
+
+
+    private void CinePhysics_UpdateState()
+    {
+        switch(CineState)
+        {
+            case CinematicState.Stationary:
+            StateStationary();
+            break;
+            case CinematicState.FreeWheel:
+            StateFreewheel();
+            break;
+            default:
+            break;
+        }
+    }
+
+
+    public void StateFreewheel()
+    {
+        _wheelCollider.BL.motorTorque = 0.001f;
+        _wheelCollider.BR.motorTorque = 0.001f;
+        _wheelCollider.FL.motorTorque = 0.001f;
+        _wheelCollider.FR.motorTorque = 0.001f;
+    }
+
+    public void StateStationary()
+    {
+        _wheelCollider.BL.motorTorque = 0f;
+        _wheelCollider.BR.motorTorque = 0f;
+        _wheelCollider.FL.motorTorque = 0f;
+        _wheelCollider.FR.motorTorque = 0f;
     }
 
 

@@ -10,6 +10,9 @@ public class RelativeParent : MonoBehaviour
     private Vector3 initialOffset;
     private float initialYPosition;
 
+    void Awake() {
+        initialYPosition = transform.position.y;
+    }
     void Start()
     {
         // store the initial offset and y-position of the child object
