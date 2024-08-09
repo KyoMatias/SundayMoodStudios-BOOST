@@ -70,10 +70,10 @@ public class CinematicPhysics : MonoBehaviour
 
     public void StateFreewheel()
     {
-        _wheelCollider.BL.motorTorque = 0.001f;
-        _wheelCollider.BR.motorTorque = 0.001f;
-        _wheelCollider.FL.motorTorque = 0.001f;
-        _wheelCollider.FR.motorTorque = 0.001f;
+        _wheelCollider.BL.motorTorque = 0.0001f;
+        _wheelCollider.BR.motorTorque = 0.0001f;
+        _wheelCollider.FL.motorTorque = 0.0001f;
+        _wheelCollider.FR.motorTorque = 0.0001f;
     }
 
     public void StateStationary()
