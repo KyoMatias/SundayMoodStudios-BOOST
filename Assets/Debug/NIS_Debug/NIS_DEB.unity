@@ -406,7 +406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &325549951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26680,7 +26680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 515ea64946d0df44ca46f564dad2841d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CineState: 1
+  CineState: 0
   _wheelMeshes:
     FLm: {fileID: 3131231493464982348}
     FRm: {fileID: 6602274979258028725}
