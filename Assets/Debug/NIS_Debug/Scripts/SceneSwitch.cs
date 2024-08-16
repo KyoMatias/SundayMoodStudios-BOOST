@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-   public void PlayNIS()
+
+   public void LoadScene()
    {
-    SceneManager.LoadScene("NIS_DEB");
+      SceneManager.LoadScene("NIS_DEB", LoadSceneMode.Additive);
    }
 }

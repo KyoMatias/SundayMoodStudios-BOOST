@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7590994253303277504, guid: a2a5157b6b8907d449fbd4cbf05645c7, type: 3}
       propertyPath: m_Name
-      value: NICAFD (1) Variant
+      value: NICAFDNIS
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -63,12 +63,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7590994253303277504, guid: a2a5157b6b8907d449fbd4cbf05645c7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8562971231180807845}
-    - targetCorrespondingSourceObject: {fileID: 7590994253303277504, guid: a2a5157b6b8907d449fbd4cbf05645c7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7093200282029027175}
-    - targetCorrespondingSourceObject: {fileID: 7590994253303277504, guid: a2a5157b6b8907d449fbd4cbf05645c7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7187897293639052970}
     - targetCorrespondingSourceObject: {fileID: 7590994253303277504, guid: a2a5157b6b8907d449fbd4cbf05645c7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 516496235406016579}
@@ -118,44 +112,6 @@ MonoBehaviour:
     BR: {fileID: 4429198475072698565}
   State: 0
   carstat: {fileID: 11400000, guid: 0dc73c4ce026f9447b4b97df9e7df9a9, type: 2}
---- !u!95 &7093200282029027175
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2587444463221051858}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0fb44434febcc854697210bd25f42ca0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!320 &7187897293639052970
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2587444463221051858}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 861ef2ae7d4c53845965c26bc6a4d2e6, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 0
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!114 &516496235406016579
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class Debug_Tacho : MonoBehaviour
 
     void Update()
     {
-        //EngineInput();
+        EngineInput();
 
         needle.eulerAngles = new Vector3(0,0, GetRotation());
     }
@@ -47,7 +47,7 @@ public class Debug_Tacho : MonoBehaviour
             speed -= brake * Time.deltaTime;
         }*/
 
-        //speed = Mathf.Clamp(speed,0f, maxSpeed);
+        speed = Mathf.Clamp(speed,0f, maxSpeed);
     }
 
     private float GetRotation()

@@ -38,6 +38,14 @@ public class CinematicPhysics : MonoBehaviour
     }
 
 
+    [Range(-1f, 1f)]
+    public float SteerAnimations;
+
+    private float Steer;
+    public float steerMultiplier;
+    public AnimationCurve SteerCurve;
+
+
 
     private void Awake() {
 
@@ -47,6 +55,7 @@ public class CinematicPhysics : MonoBehaviour
     {
         GetWheelPosition();
         CinePhysics_UpdateState();
+        ApplySteer();
         
 
     }
@@ -99,5 +108,13 @@ public class CinematicPhysics : MonoBehaviour
         col.GetWorldPose(out position, out rot);
         wheelMesh.transform.position = position;
         wheelMesh.transform.rotation = rot;
+    }
+
+    public void ApplySteer()
+    {
+        Steer = SteerAnimations;
+        float steeringAngle = Steer * steerMultiplier;
+        _wheelCollider.FR.steerAngle = steeringAngle;
+        _wheelCollider.FL.steerAngle = steeringAngle;
     }
 }
