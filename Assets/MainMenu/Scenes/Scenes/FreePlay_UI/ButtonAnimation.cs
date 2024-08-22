@@ -28,7 +28,7 @@ public class ButtonAnimation : MonoBehaviour
         }
     }
 
-    void OnMouseUpAsButton() 
+    void OnMouseDown() 
     {
          Debug.Log("FreePlay Engaged");
     }
