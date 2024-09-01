@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec58d30f3cdc5d94da1f0589026b34c2, type: 3}
+  m_Name: PROLOGUECHAPTER
+  m_EditorClassIdentifier: 
+  STORYCHAPTER: Prologue
+  CHAPTERSUBTEXT: Red Lurking In The Streets
+  CHAPTERCODE: 0
+  CHAPTERBG: {fileID: 2100000, guid: 856ead6427919cd419909d6dac841cf3, type: 2}
+  IsChapterMarked: 0

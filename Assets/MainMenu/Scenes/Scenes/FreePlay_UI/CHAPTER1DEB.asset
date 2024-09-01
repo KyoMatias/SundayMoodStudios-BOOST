@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   STORYCHAPTER: CHAPTER 1
   CHAPTERSUBTEXT: MEET HITOMI
-  CHAPTERCODE: 3
+  CHAPTERCODE: 1
   CHAPTERBG: {fileID: 2100000, guid: 05fa986823c48ce4395b195b7ad28555, type: 2}
+  IsChapterMarked: 0
