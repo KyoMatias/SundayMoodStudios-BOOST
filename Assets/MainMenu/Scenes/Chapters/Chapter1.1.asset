@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc416f236d3892442ad48213096a1c42, type: 3}
+  m_Name: Chapter1.1
+  m_EditorClassIdentifier: 
+  ChapterID: 2
+  Title: Chapter 1.1
+  Eyecatch: Meet Hitomi
+  Description: Hitomi Nakazato is a 19-year-old novice street racer, car tuner, and
+    a member of the V&B crew, as well as Ken's girlfriend. She is passionate about
+    cars, hardworking, patient, resourceful, tactical, and dangerous when needed.
+    Hitomi has brown, feathered bob hair, hazel eyes, and a light makeup look with
+    pale rose lips. She is often seen wearing a purple headband, pale crimson thick-framed
+    glasses, a cropped leather jacket, and an olive green round-neck shirt, paired
+    with a high-waisted black skirt, thigh-high socks, and green Converse shoes.
+    Her outgoing and jolly personality shines through, and she always exudes confidence.
+    Hitomi drives an olive green 1994 Mk4 Toyota Supra.
+  InProgress: 0
+  Completed: 0

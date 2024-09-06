@@ -5,11 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MenuManagerSO", menuName = "MenuManagerSO", order = 0)]
 public class MenuManagerSO : ScriptableObject {
 
-    public class ChapterRows
-    {
-        public MENUTRACKERDEBUG[] ChapterStats;
-    }
-    [SerializeField] private ChapterRows[] chapters;
-
 }
 

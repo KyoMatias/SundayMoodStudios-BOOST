@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc416f236d3892442ad48213096a1c42, type: 3}
+  m_Name: Prologue
+  m_EditorClassIdentifier: 
+  ChapterID: 0
+  Title: Prologue
+  Eyecatch: The Terror In Red
+  Description: "\nThe roar of engines and the screech of tires filled the Osaka Loop
+    Line. Kouki Minato had just claimed victory in a high-stakes street race, beating
+    out a fierce Grey R35 Skyline. The cash prize sat in his trunk\u2014his future
+    within reach. But his celebration was cut short. A ruthless gang of street-racing
+    terrorists ambushed him, leaving him dead and his winnings gone. Now, the gang
+    is speeding east, their sights set on Tokyo, leaving chaos in their wake.\n\nMeanwhile,
+    V&B\u2014Tokyo\u2019s elite car mod crew\u2014is gearing up for the most massive
+    car meet at Daikoku Car Park. For them, it\u2019s just another day of tuning
+    engines, pushing limits, and living for the rush. But little do they know, the
+    streets are about to run red."
+  InProgress: 1
+  Completed: 0

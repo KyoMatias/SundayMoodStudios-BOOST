@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: dfef37697e8cc6e4f8af5a3b2c471807, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.99
+      value: -113.92
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dfef37697e8cc6e4f8af5a3b2c471807, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.836
+      value: 43.63817
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dfef37697e8cc6e4f8af5a3b2c471807, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -158.5
+      value: 18.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dfef37697e8cc6e4f8af5a3b2c471807, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.49472323
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dfef37697e8cc6e4f8af5a3b2c471807, type: 3}
       propertyPath: m_LocalRotation.x
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dfef37697e8cc6e4f8af5a3b2c471807, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.86905056
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dfef37697e8cc6e4f8af5a3b2c471807, type: 3}
       propertyPath: m_LocalRotation.z
@@ -271,6 +271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef933f6e92d232d44a23da6f47d9dd34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CarEngine: 0
+  Burnout: 0
   IsSequenced: 0
   IsControlled: 0
   Gas: 0
@@ -279,6 +281,7 @@ MonoBehaviour:
   HP: 200
   BHP: 0
   slip: 0
+  steerMultiplier: 0
   SteerCurve:
     serializedVersion: 2
     m_Curve: []

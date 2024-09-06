@@ -113,7 +113,7 @@ public class CinematicPhysics : MonoBehaviour
     public void ApplySteer()
     {
         Steer = SteerAnimations;
-        float steeringAngle = Steer * steerMultiplier;
+        float steeringAngle = Steer * steerMultiplier ;
         _wheelCollider.FR.steerAngle = steeringAngle;
         _wheelCollider.FL.steerAngle = steeringAngle;
     }

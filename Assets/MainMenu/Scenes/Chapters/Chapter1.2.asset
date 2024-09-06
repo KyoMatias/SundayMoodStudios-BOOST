@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc416f236d3892442ad48213096a1c42, type: 3}
+  m_Name: Chapter1.2
+  m_EditorClassIdentifier: 
+  ChapterID: 3
+  Title: Chapter 1.2
+  Eyecatch: Meet Ken
+  Description: Ken Sakamoto is a 25-year-old experienced street racer, bodykit builder,
+    and the founder and leader of the V&B crew. He is also Hitomi Nakazato's boyfriend.
+    Ken is passionate about racing and is known for being serious, helpful, quiet,
+    caring, and highly skilled in driving. He has black wolf-cut hair, marine blue
+    eyes, a muscular build, and pale lips. His usual outfit includes an unbuttoned
+    grey polo over a black t-shirt with a white stripe, blue jeans, and brown Vans-style
+    shoes. Ken carries a serious and observant expression, giving off a tough demeanor. 
+    driving his ice white 2013 Acura/Honda NSX, which was equipped with a stock front
+    bumper, custom rear diffuser, chrome exhaust, APR spoiler, and black BBS RS rims.
+  InProgress: 0
+  Completed: 0
