@@ -6,26 +6,22 @@ using UnityEngine.UIElements.Experimental;
 
 public class OverallManager : MonoBehaviour
 {
-    #region 
     //Manager Instantiate Code.
-    private static OverallManager _instance;
-    public static OverallManager Instance
-    {
-        get
-        {
-            if(_instance == null)
-            
-                Debug.LogError("Manager Is Null / Not Found");
+    public static OverallManager Instance;
 
-                return _instance;
+    private void Awake()
+    {
+        
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);    
         }
     }
-    void Awake()
-    {
-        _instance = this;
-    }
 
-    #endregion
     [SerializeField] private string buildversion;
 
     public enum GameState
