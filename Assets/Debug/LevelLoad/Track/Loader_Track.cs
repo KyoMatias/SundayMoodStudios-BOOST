@@ -12,6 +12,7 @@ public class Loader_Track : MonoBehaviour
     private void OnEnable()      
     {
         Debug.Log("PreLevel Phase");
+        Resources.Load("");
         StartCoroutine(LoadDelay(2));
     }
 
