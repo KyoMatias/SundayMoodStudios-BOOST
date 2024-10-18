@@ -1,31 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 
 public class Loader_Track : MonoBehaviour
 {
     [SerializeField] private LevelLoad _load;
+    public string MapName;
+    public string PlayerCarName;
+
+    private void LoadPrefabs()
+    {
+        LoadEventStat();
+        LoadMap();
+        LoadCars();
+    }
     
 
 
     private void OnEnable()      
     {
         Debug.Log("PreLevel Phase");
-        Resources.Load("");
-        StartCoroutine(LoadDelay(2));
+        StartCoroutine(LoadDelay(1));
+        MapName = _load.Map;
+        PlayerCarName = _load.Player_Car;
     }
+
 
     public void LoadMap()
     {
-        Debug.Log("Map Loaded!");
-        _load.Map = Instantiate(_load.MapAsset());
+        GameObject mapPrefab = Resources.Load<GameObject>("Maps/" + MapName);
+
+        if(mapPrefab != null)
+        {
+            Instantiate(mapPrefab, Vector3.zero , quaternion.identity);
+            Debug.Log(mapPrefab + "Map Loaded!");
+        }
+        else
+        {
+            Debug.LogError("Load Failed");
+        }
     }
 
     public void LoadCars()
     {
-        Debug.Log("Cars Loaded!");
-        _load.Player_Car = Instantiate(_load.Player_CarAsset());
+        Vector3 LoadCarPos = new Vector3(_load.P_X,_load.P_Y,_load.P_Z);
+        GameObject CarPrefab = Resources.Load<GameObject>("Debug/Cars/" + PlayerCarName);
+
+
+            if(CarPrefab != null)
+            {
+                Instantiate(CarPrefab, LoadCarPos, Quaternion.Euler(new Vector3(_load.R_X,_load.R_Y,_load.R_Z)));
+                Debug.Log(CarPrefab + "Car Loaded!");
+            }
+            else
+            {
+                Debug.LogError("Car Load Failed");
+            }
+
     }
 
     public void LoadEventStat()
@@ -41,9 +74,7 @@ public class Loader_Track : MonoBehaviour
     IEnumerator LoadDelay(float sec)
     {
         yield return new WaitForSeconds(sec);
-        LoadEventStat();
-        LoadMap();
-        LoadCars();
+        LoadPrefabs();
         
     }
 

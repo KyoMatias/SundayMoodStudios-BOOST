@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9060f55431a45479e81aa6fcd0b316, type: 3}
   m_Name: Masinag_DH
   m_EditorClassIdentifier: 
-  Map: {fileID: 0}
-  Player_Car: {fileID: 0}
+  Map: MAP_MasinagMain
+  Player_Car: PlayerCar
   P_X: -113.92
   P_Y: 43.63817
   P_Z: 18.94
   R_X: 0
-  R_Y: 120.697
+  R_Y: 120.158
   R_Z: 0

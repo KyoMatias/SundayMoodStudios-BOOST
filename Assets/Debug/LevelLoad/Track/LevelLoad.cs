@@ -7,8 +7,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TrackData", menuName = "Track")]
 public class LevelLoad : ScriptableObject
 {
-    public GameObject Map;
-    public GameObject Player_Car;
+    public string Map;
+    public string Player_Car;
 
     [Header("Player Car Position")]
     public float P_X;
@@ -22,15 +22,13 @@ public class LevelLoad : ScriptableObject
     public float R_Z;
 
 
-    public GameObject MapAsset()
+    public string MapAsset()
     {
         return Map;
     }
-
-    public GameObject Player_CarAsset()
+    
+    public string PlayerCarAsset()
     {
-        Player_Car.transform.position = new Vector3(P_X,P_Y,P_Z);
-        Player_Car.transform.Rotate(R_X,R_Y,R_Z);
         return Player_Car;
     }
 
