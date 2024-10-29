@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc61ada7f3ea4ab4cb76e56519d0ccb2, type: 3}
   m_Name: MazdaFD
   m_EditorClassIdentifier: 
+  Manufacturer: Mazda
+  Model: RX-7
+  Type: FD3S
   PlayerCarName: RX7FD
+  PresetDriveTrain: 0
   IdleRPM: 900
   HP: 252
-  PlayerRB: {fileID: 0}

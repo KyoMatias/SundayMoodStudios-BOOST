@@ -39,7 +39,7 @@ namespace CarControls
         [Header("Private Settings")]
         [SerializeField] private TransmissionSettings currentTransmission;
         [SerializeField] private DriveMode currentDriveMode;
-        [SerializeField] private Drivetype currentDriveType;
+        public static Drivetype CurrentDriveType;
         [SerializeField] private CarStat currentCarStat;
 
         public enum Gear
@@ -54,9 +54,11 @@ namespace CarControls
         Fifth = 5,
         Sixth = 6,
         Seventh = 7,
-
-
         }
+
+        [Header("Script Fetcher")]
+        public InputReciever inputReciever;
+
 
 
         [Header("Vehicle Overlook")]
@@ -66,81 +68,40 @@ namespace CarControls
         public float Steer;
         [SerializeField] private float horsePower;
         [SerializeField] private float brakeHorsepower;
-        [SerializeField] private float slip;
+        public float Slip;
          public float CarSpeed = 0;
         [SerializeField] private float engineRPM;
         public float steerMultiplier;
         public AnimationCurve SteerCurve;
         public string vehicleName {get ; private set;}
 
-        
 
         
-        [System.Serializable]
-        public class WheelMesh
-        {
-            [Header("Wheel Meshes")]
-            public MeshRenderer FrontLeftMesh;
-            public MeshRenderer FrontRightMesh;
-            public MeshRenderer RearLeftMesh;
-            public MeshRenderer RearRightMesh;
-        }
-
-        [System.Serializable]
-
-        public class WheelCollisions
-        {
-            [Header("Wheel Colliders")]
-            public WheelCollider FL;
-            public WheelCollider FR;
-            public WheelCollider RL;
-            public WheelCollider RR;
-        } 
-        
-
-        private Rigidbody rb ;
-        public WheelMesh C_WheelMeshes;
-        public WheelCollisions C_WheelCollisions;
 
 
         private void Awake() {
-            
         }
 
         private void Start() {
-            rb = gameObject.GetComponent<Rigidbody>();
+            
         }
 
 
         public void FixedUpdate() {
-            CarSpeed = rb.velocity.magnitude;
+            
             InputController();
-            WheelPosition();
-            ApplyThrottle();
-            ApplySteering();
-            GearSwitch();
+            GasPedal();
+            Steering();
+            // WheelPosition();
+            // ApplyThrottle();
+            // ApplySteering();
+            // GearSwitch();
         }
 
         public void InputController()
         {
             Gas = Input.GetAxis("Vertical");
-            Steer = Input.GetAxis("Horizontal");
-            float movingDirection = Vector3.Dot(transform.forward, rb.velocity);
-            slip = Vector3.Angle(transform.forward, rb.velocity-transform.forward);
-            if (movingDirection < -0.5f && Gas > 0)
-            {
-                Brake = Mathf.Abs(Gas);
-            }
-            else if (movingDirection > 0.5f && Gas < 0)
-            {
-                Brake = Mathf.Abs(Gas);
-            }
-            else
-            {
-                Brake = 0;
-            }
-
-            CarSpeed = rb.velocity.magnitude * 3.6f;
+            Steer = Input.GetAxis("Horizontal");         
         }
         public float EnginePhysics()
         {
@@ -148,8 +109,22 @@ namespace CarControls
             return engineRPM;
         }
 
-        
-        private void ApplyThrottle()
+        private void AttachToInputReciever()
+        {
+
+        }
+
+        public void GasPedal()
+        {
+            InputReciever.Instance.RecieveGas();
+        }
+        public void Steering()
+        {
+            InputReciever.Instance.RecieveSteering();
+        }
+
+
+        /*private void ApplyThrottle()
         {
             horsePower = currentCarStat.HP / 0.20f;
             EnginePhysics();
@@ -173,12 +148,7 @@ namespace CarControls
             }
         }
 
-        public void ApplySteering()
-        {
-            float steeringAngle = Steer * steerMultiplier * SteerCurve.Evaluate(CarSpeed);
-            C_WheelCollisions.FR.steerAngle = steeringAngle;
-            C_WheelCollisions.FL.steerAngle = steeringAngle;
-        }
+
 
         public void GearSwitch()
         {
@@ -210,6 +180,7 @@ namespace CarControls
             wheelMeshRender.transform.position = position;
             wheelMeshRender.transform.rotation = rot;
         }
+        */
     }
 }
 
