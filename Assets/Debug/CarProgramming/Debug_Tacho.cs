@@ -10,9 +10,15 @@ public class Debug_Tacho : MonoBehaviour
     private const float NullSpeed = 340;
 
     private Transform needle;
-
+    private float startpos = -20f;
+    private float endpos = 480f;
+    private float desirepos;
+    private float engineSpeed;
+    private float needlespeed;
     private float maxSpeed;
     private float speed;
+    private float speedNormalized;
+    private float totalAG;
 
     private Engine engine;
 
@@ -26,11 +32,16 @@ public class Debug_Tacho : MonoBehaviour
         engine = FindAnyObjectByType<Engine>();
     }
 
+    private void Start() {
+        needlespeed = startpos;
+    }
     void Update()
     {
-        EngineInput();
-
-        needle.eulerAngles = new Vector3(0,0, GetRotation());
+        //EngineInput();
+        engineSpeed = engine.roundedValue;
+        float value = engineSpeed / needlespeed;
+        desirepos = startpos - endpos;
+        needle.eulerAngles = new Vector3(0,0, startpos - value * desirepos);
     }
 
     private void EngineInput()
@@ -54,7 +65,7 @@ public class Debug_Tacho : MonoBehaviour
     {
         float totalAngle = NullSpeed - MaxAngle;
 
-        float speednormalized = speed / maxSpeed;
-        return NullSpeed - speednormalized * totalAngle;
+        speedNormalized = speed / maxSpeed;
+        return NullSpeed - speedNormalized * totalAngle;
     }
 }
