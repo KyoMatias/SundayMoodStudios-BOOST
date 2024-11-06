@@ -876,6 +876,8 @@ GameObject:
   m_Component:
   - component: {fileID: 712446470}
   - component: {fileID: 712446471}
+  - component: {fileID: 712446476}
+  - component: {fileID: 712446475}
   - component: {fileID: 712446472}
   - component: {fileID: 712446473}
   - component: {fileID: 712446474}
@@ -937,9 +939,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 814254107}
-  minRPM: 1
-  peakRPM: 4
-  maxRPM: 9
+  minRPM: 5
+  peakRPM: 7
+  maxRPM: 10
   pitchReferenceRPM: 1.4
 --- !u!114 &712446473
 MonoBehaviour:
@@ -954,10 +956,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   engineNotes:
+  - {fileID: 712446476}
+  - {fileID: 712446475}
   - {fileID: 712446472}
   rpm: 0
   masterVolume: 10
-  engine: {fileID: 0}
 --- !u!114 &712446474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,6 +976,40 @@ MonoBehaviour:
   gear: 0
   gearlvl: 0000000001000000020000000300000004000000050000000600000007000000
   CurrentGear: 1
+--- !u!114 &712446475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712446469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b9b5106dfa6074aaf3839b02ba9d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 1493410398}
+  minRPM: 0.9
+  peakRPM: 2
+  maxRPM: 6
+  pitchReferenceRPM: 2
+--- !u!114 &712446476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712446469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b9b5106dfa6074aaf3839b02ba9d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 1706487020}
+  minRPM: 0.9
+  peakRPM: 1
+  maxRPM: 1.5
+  pitchReferenceRPM: 0.19
 --- !u!1 &730302057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1139,7 @@ GameObject:
   - component: {fileID: 814254108}
   - component: {fileID: 814254107}
   m_Layer: 0
-  m_Name: Audio (1)
+  m_Name: HighRev
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1526,12 +1563,12 @@ GameObject:
   - component: {fileID: 1493410399}
   - component: {fileID: 1493410398}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: LowRev
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1493410398
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1542,7 +1579,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: a1649f0e7be2cb6409716f21eff77c94, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 61fe2df882a55494381d20de8b6a7613, type: 3}
+  m_audioClip: {fileID: 8300000, guid: acda7dd942dc082438b48c85830cb3f2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.515
   m_Pitch: 1
@@ -1787,7 +1824,7 @@ GameObject:
   - component: {fileID: 1706487021}
   - component: {fileID: 1706487020}
   m_Layer: 0
-  m_Name: Audio (2)
+  m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1803,9 +1840,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: a1649f0e7be2cb6409716f21eff77c94, type: 2}
-  m_audioClip: {fileID: 8300000, guid: acda7dd942dc082438b48c85830cb3f2, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.515
+  m_audioClip: {fileID: 8300000, guid: 85a9a7f3ed40b6f42b2f5870dedda10c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.216
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1943,7 +1980,7 @@ SceneRoots:
   - {fileID: 299345835}
   - {fileID: 233669488}
   - {fileID: 204922329}
+  - {fileID: 1706487021}
   - {fileID: 1493410399}
   - {fileID: 814254108}
-  - {fileID: 1706487021}
   - {fileID: 428765228}

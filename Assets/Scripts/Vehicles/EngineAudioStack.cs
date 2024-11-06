@@ -10,8 +10,7 @@ public class EngineAudioStack : MonoBehaviour
 
     static float[] workingVolumes = new float[3]; // or maximum number of engine notes you need
 
-    public Engine engine;
-
+    private Engine engine;
 
     private void Awake() {
         engine = GetComponent<Engine>();
