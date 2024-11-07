@@ -1447,6 +1447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3187859101472770836}
+  - component: {fileID: 2426216611283620400}
   m_Layer: 0
   m_Name: CamLock
   m_TagString: Untagged
@@ -1466,10 +1467,36 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.953, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8110934396700699058}
+  m_Children: []
   m_Father: {fileID: 1624934838390847398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2426216611283620400
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577733297487790889}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &614385951438315314
 GameObject:
   m_ObjectHideFlags: 0
@@ -14405,11 +14432,11 @@ Transform:
   m_GameObject: {fileID: 6180512219555803908}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -3.2134295e-12, w: 1}
-  m_LocalPosition: {x: 0, y: 0.37299997, z: -4.405}
+  m_LocalPosition: {x: 0, y: 1.326, z: -4.405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3187859101472770836}
+  m_Father: {fileID: 1624934838390847398}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5644053981488689772
 Camera:
@@ -14526,13 +14553,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f856f88aee1d0bc419e1a885fc5ac1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 1624934838390847398}
-  distance: 4.75
-  height: 1.39
+  car: {fileID: 3187859101472770836}
+  distance: 4.16
+  height: 0.6
   rotationDamping: 3
   heightDamping: 2
   zoomRatio: 0.5
-  defaultFOV: 51.5
+  defaultFOV: 56.7
 --- !u!1 &6224055884301133438
 GameObject:
   m_ObjectHideFlags: 0
@@ -16712,6 +16739,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8110934396700699058}
   - {fileID: 3187859101472770836}
   - {fileID: 1987293793960206688}
   - {fileID: 7726763552829983636}

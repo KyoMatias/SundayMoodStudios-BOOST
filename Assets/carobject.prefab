@@ -278,7 +278,7 @@ MonoBehaviour:
   Gas: 0
   Brake: 0
   Steer: 0
-  HP: 200
+  HP: 2000
   BHP: 0
   slip: 0
   steerMultiplier: 0

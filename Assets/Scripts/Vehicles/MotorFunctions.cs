@@ -45,9 +45,10 @@ public class MotorFunctions : MonoBehaviour
        {
              if(PlayerController.CurrentDriveType == PlayerController.Drivetype.RearWheel)
             {
-                 wca.Player_WheelsCollider.RL.motorTorque = playerController.Gas *  100f;
-                 wca.Player_WheelsCollider.RR.motorTorque = playerController.Gas *  100f;
-             }
+                 wca.Player_WheelsCollider.RL.motorTorque = playerController.Gas * playerController.HorsePower *  10f;
+                 wca.Player_WheelsCollider.RR.motorTorque = playerController.Gas * playerController.HorsePower * 10f;
+                
+        }
              else if (PlayerController.CurrentDriveType == PlayerController.Drivetype.FrontWheel)
              {
                  wca.Player_WheelsCollider.FL.motorTorque = playerController.Gas;
@@ -60,13 +61,14 @@ public class MotorFunctions : MonoBehaviour
                  wca.Player_WheelsCollider.FL.motorTorque = playerController.Gas;
                  wca.Player_WheelsCollider.FR.motorTorque = playerController.Gas;
              }
+
          }
 
     public void ApplySteering()
         {
-            float steeringAngle = playerController.Steer * playerController.steerMultiplier * playerController.SteerCurve.Evaluate(CarSpeed);
-            //playerController.Steer * playerController.steerMultiplier * playerController.SteerCurve.Evaluate(CarSpeed);
-            wca.Player_WheelsCollider.FL.steerAngle = steeringAngle;
+            float steeringAngle = playerController.Steer * playerController.steerMultiplier;
+        //playerController.Steer * playerController.steerMultiplier  * playerController.SteerCurve.Evaluate(CarSpeed);
+        wca.Player_WheelsCollider.FL.steerAngle = steeringAngle;
             wca.Player_WheelsCollider.FR.steerAngle = steeringAngle;
         }
          

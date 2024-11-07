@@ -67,7 +67,7 @@ namespace CarControls
         public float Gas;
         public float Brake;
         public float Steer;
-        [SerializeField] private float horsePower;
+        public float HorsePower;
         [SerializeField] private float brakeHorsepower;
         public float Slip;
          public float CarSpeed = 0;
@@ -98,7 +98,7 @@ namespace CarControls
 
 
 
-        public void FixedUpdate() {
+        public void Update() {
             
             InputController();
             GasPedal();
@@ -115,7 +115,7 @@ namespace CarControls
     {
         ShiftUp();
         ShiftDown();
-
+            Debug.Log("Shifting");
     }
 
 
@@ -124,7 +124,7 @@ namespace CarControls
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
             _gearsLogic.GearShiftUp();
-            //Deb.Log("Gear Status: UP ");
+            Debug.Log("Gear Status: UP ");
         }
     }
 
@@ -146,7 +146,7 @@ namespace CarControls
         }
         public float EnginePhysics()
         {
-            engineRPM = currentCarStat.IdleRPM + (Gas * (currentCarStat.IdleRPM * horsePower));
+            engineRPM = currentCarStat.IdleRPM + (Gas * (currentCarStat.IdleRPM * HorsePower));
             return engineRPM;
         }
 
