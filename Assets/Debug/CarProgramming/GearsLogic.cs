@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using CarControls;
 using UnityEngine;
 
 public class GearsLogic : MonoBehaviour
 {
+    private static GearsLogic _instance;
+    public static GearsLogic Instance { get; private set; }
     public enum GearCount
     {
         R = -1,
@@ -17,72 +21,91 @@ public class GearsLogic : MonoBehaviour
     }
 
     [SerializeField] private GearCount gear;
+    private int sprocket = 1;
+    private int gearlvl;
 
+    public int CurrentGear;
 
-
-
-    [SerializeField]private int[] gearlvl;
-
-    public int CurrentGear = 1;
-
+    public event Action GearPlus;
+    public event Action GearMinus;
     // Start is called before the first frame update
+    private void Awake() 
+    {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(this);
+        } 
+        else{
+            Instance = this;
+        }
+    }
+
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Shifter();
+        GearCheck();
     }
 
 
-
-    void Shifter()
+    private void GearSetting(int gear)
     {
-        ShiftUp();
-        //ShiftDown();
-
-    }
-
-
-    void ShiftUp()
-    {
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        GearCount currentGearCount = (GearCount) gear;
+        switch (currentGearCount)
         {
-            GearChangeMaster(CurrentGear);
-            Debug.Log("Current Gear " +  CurrentGear);
+            case GearCount.R:
+            break;
+            case GearCount.N:
+            break;
+            case GearCount.First:
+            break;
+            case GearCount.Second:
+            break;
+            case GearCount.Third:
+            break;
+            case GearCount.Fourth:
+            break;
+            case GearCount.Fifth:
+            break;
+            case GearCount.Sixth:
+            break;
+            default:
+            break;
         }
     }
 
-    void  ShiftDown()
+    private void GearCheck()
     {
-        if(Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            GearChangeMaster(-CurrentGear);
-            Debug.Log("Current Gear " +  CurrentGear);
-        }
+        
     }
 
 
-    //IEnumerator ChangeGear(int gear)
-    //{
+    public void GearShiftUp()
+    {
+        GearPlus?.Invoke();
+        GearChangeMaster(sprocket);
+        Debug.Log("Upshift");
+    }
 
-    //}
-
-
+    public void GearShiftDown()
+    {
+        GearMinus?.Invoke();
+        GearChangeMaster(-sprocket);
+        Debug.Log("Downshift");
+    }
     void GearChangeMaster(int value)
     {
-        for(int i = 0; i < gearlvl.Length; i++)
-        {
-            gearlvl[i] += value;
+            gearlvl += value;
 
-            if(gearlvl[i] < 0)
+            CurrentGear = gearlvl;
+
+            if(gearlvl < 0)
             {
-                gearlvl[i] = 0;
+                gearlvl = 0;
             }
-        }
     }
 
 }

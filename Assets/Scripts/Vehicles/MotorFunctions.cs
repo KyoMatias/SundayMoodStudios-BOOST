@@ -65,6 +65,7 @@ public class MotorFunctions : MonoBehaviour
     public void ApplySteering()
         {
             float steeringAngle = playerController.Steer * playerController.steerMultiplier * playerController.SteerCurve.Evaluate(CarSpeed);
+            //playerController.Steer * playerController.steerMultiplier * playerController.SteerCurve.Evaluate(CarSpeed);
             wca.Player_WheelsCollider.FL.steerAngle = steeringAngle;
             wca.Player_WheelsCollider.FR.steerAngle = steeringAngle;
         }

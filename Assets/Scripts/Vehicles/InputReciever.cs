@@ -45,6 +45,6 @@ public class InputReciever : MonoBehaviour
     public void RecieveSteering()
     {
         motorFunctions.ApplySteering();
-        Debug.Log("Turning!");
+            
     }
 }

@@ -1,4 +1,5 @@
- using System.Collections;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Callbacks;
 using UnityEngine;
@@ -76,10 +77,19 @@ namespace CarControls
         public string vehicleName {get ; private set;}
 
 
+        private GearsLogic _gearsLogic;
+
+
+        public static event Action PlusGear;
+        public static event Action MinusGear;
+
+
+
         
 
 
         private void Awake() {
+            _gearsLogic = GetComponentInChildren<GearsLogic>();
         }
 
         private void Start() {
@@ -87,16 +97,47 @@ namespace CarControls
         }
 
 
+
         public void FixedUpdate() {
             
             InputController();
             GasPedal();
             Steering();
+            Shifter();
             // WheelPosition();
             // ApplyThrottle();
             // ApplySteering();
             // GearSwitch();
         }
+
+
+    void Shifter()
+    {
+        ShiftUp();
+        ShiftDown();
+
+    }
+
+
+    public void ShiftUp()
+    {
+        if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            _gearsLogic.GearShiftUp();
+            //Deb.Log("Gear Status: UP ");
+        }
+    }
+
+    public void  ShiftDown()
+    {
+        if(Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            _gearsLogic.GearShiftDown();
+            Debug.Log("Gear Status: DOWN ");
+        }
+    }
+
+
 
         public void InputController()
         {
