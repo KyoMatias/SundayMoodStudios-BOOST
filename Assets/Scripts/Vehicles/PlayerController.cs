@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 
@@ -80,14 +79,6 @@ namespace CarControls
         private GearsLogic _gearsLogic;
 
 
-        public static event Action PlusGear;
-        public static event Action MinusGear;
-
-
-
-        
-
-
         private void Awake() {
             _gearsLogic = GetComponentInChildren<GearsLogic>();
         }
@@ -115,7 +106,7 @@ namespace CarControls
     {
         ShiftUp();
         ShiftDown();
-            Debug.Log("Shifting");
+
     }
 
 
@@ -124,7 +115,7 @@ namespace CarControls
         if(Input.GetKeyUp(KeyCode.LeftShift))
         {
             _gearsLogic.GearShiftUp();
-            Debug.Log("Gear Status: UP ");
+            //Deb.Log("Gear Status: UP ");
         }
     }
 

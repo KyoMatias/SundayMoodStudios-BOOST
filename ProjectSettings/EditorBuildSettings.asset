@@ -11,17 +11,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainMenu/Scenes/Scenes/GarageMain.unity
     guid: 3d8087f254e922b48b78685f67cc859b
-  - enabled: 1
-    path: Assets/Debug/NIS_Debug/NIS_DEB.unity
-    guid: 2cdc0b087981cb04e90b48c9452a6eb0
-  - enabled: 1
-    path: Assets/Debug/NIS_Debug/TESTPLAYNIS.unity
-    guid: aaa01e84bcaea684190f96ae41762f43
-  - enabled: 1
-    path: Assets/Debug/LoadingScreen/LoadingScreen.unity
-    guid: 45ac66264ef34984b8ec100755b0421a
-  - enabled: 1
-    path: Assets/Debug/LevelLoad/WORLD.unity
-    guid: bc8ea5a42ba23ff468d7122adc91a1d9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e829572f19b0fdf43be6f458e9254ac3, type: 2}

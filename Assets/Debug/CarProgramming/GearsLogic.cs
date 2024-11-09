@@ -47,7 +47,7 @@ public class GearsLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GearCheck();
+        
     }
 
 
@@ -79,7 +79,7 @@ public class GearsLogic : MonoBehaviour
 
     private void GearCheck()
     {
-        
+        GearChangeMaster(CurrentGear);
     }
 
 
