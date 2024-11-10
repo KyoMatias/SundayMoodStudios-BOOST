@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization.Formatters;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonAnimation : MonoBehaviour
 {
@@ -41,9 +42,24 @@ public class ButtonAnimation : MonoBehaviour
     public void OnMouseDown() 
     {
         onFreeClicked.Invoke();
+        StartCoroutine(WaitTime(4));
         OnMenuToFreePlay.Invoke();
-         Debug.Log("Button Engaged");
+        Debug.Log("Button Engaged");
     }
+
+
+    IEnumerator WaitTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        bool IsSet = false;
+
+        if (!IsSet)
+        {
+            SceneManager.LoadScene("LoadingScreen_General", LoadSceneMode.Single);
+            IsSet = true;
+        }
+    }
+    
     
 }
 

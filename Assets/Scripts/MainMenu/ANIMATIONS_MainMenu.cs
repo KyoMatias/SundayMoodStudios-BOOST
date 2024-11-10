@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
 
 public class ANIMATIONS_MainMenu : MonoBehaviour
 {
@@ -24,10 +26,12 @@ public class ANIMATIONS_MainMenu : MonoBehaviour
     {
         Debug.Log("Animation Triggered");
         m_CamAnimator.SetTrigger("Menu2Free");
+        
+        
     }
 
     void FreeToMenuTransition()
     {
         m_CamAnimator.SetTrigger("Free2Menu");
-    }
+        }
 }

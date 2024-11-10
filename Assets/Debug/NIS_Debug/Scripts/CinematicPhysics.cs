@@ -12,6 +12,7 @@ public class CinematicPhysics : MonoBehaviour
         FreeWheel,
         Lock,
         Neutral,
+        Run,
     }
 
     [SerializeField] private CinematicState CineState;
@@ -39,15 +40,22 @@ public class CinematicPhysics : MonoBehaviour
 
     [Range(-1f, 1f)]
     public float SteerAnimations;
+    
+    [Range(0f, 1f)]
+    public float RunThrottle;
+
+    public float Multiplier;
+    public float Speed;
 
     private float Steer;
     public float steerMultiplier;
     public AnimationCurve SteerCurve;
 
+    
 
-
-    private void Awake() {
-
+    private void Awake()
+    {
+        Speed = RunThrottle * Multiplier;
     }
 
     public void FixedUpdate()
@@ -70,6 +78,9 @@ public class CinematicPhysics : MonoBehaviour
             case CinematicState.FreeWheel:
             StateFreewheel();
             break;
+            case CinematicState.Run: 
+                StateRun();
+                break;
             default:
             break;
         }
@@ -92,6 +103,14 @@ public class CinematicPhysics : MonoBehaviour
         _wheelCollider.FR.motorTorque = 0f;
     }
 
+
+    public void StateRun()
+    {
+        _wheelCollider.BL.motorTorque = Speed;
+        _wheelCollider.BR.motorTorque = Speed;
+        _wheelCollider.FL.motorTorque = Speed;
+        _wheelCollider.FR.motorTorque = Speed;
+    }
 
      public void GetWheelPosition()
     {

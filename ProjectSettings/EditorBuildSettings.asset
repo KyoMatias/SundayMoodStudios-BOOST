@@ -11,5 +11,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainMenu/Scenes/Scenes/GarageMain.unity
     guid: 3d8087f254e922b48b78685f67cc859b
+  - enabled: 1
+    path: Assets/MainMenu/Scenes/Scenes/LoadingScreen_General.unity
+    guid: 7f7f5969a6e5e8a4ea70e95669c9c378
+  - enabled: 1
+    path: Assets/MainMenu/Scenes/Scenes/VersusScreen.unity
+    guid: 2b40fe93c382c764bbf11d4d302680e2
+  - enabled: 1
+    path: Assets/Debug/LoadingScreen/LoadingScreen.unity
+    guid: 45ac66264ef34984b8ec100755b0421a
+  - enabled: 1
+    path: Assets/Debug/LevelLoad/WORLD.unity
+    guid: bc8ea5a42ba23ff468d7122adc91a1d9
+  - enabled: 1
+    path: Assets/Debug/CarProgramming/Debug_CarDevelopment.unity
+    guid: f96718f2dab7c784aab6ced5a70e278d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e829572f19b0fdf43be6f458e9254ac3, type: 2}

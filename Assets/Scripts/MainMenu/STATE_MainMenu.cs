@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -5,7 +6,7 @@ using UnityEngine;
 
 public class STATE_MainMenu : MonoBehaviour
 {
-    public static STATE_MainMenu instance;
+    public static STATE_MainMenu Instance;
     public enum MenuStates
     {
         def,
@@ -25,10 +26,14 @@ public class STATE_MainMenu : MonoBehaviour
     public MenuStates CurrentState;
     private string Debug_Output;
     
+    
+    public event Action OnMainMenu;
+    public event Action OnVersus;
+    
     private void Awake() {
-        if(instance == null)
+        if(Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
         STATE_DEFAULT();
         ButtonAnimation.onFreeClicked += STATE_FREECLICKED;
@@ -52,11 +57,13 @@ public class STATE_MainMenu : MonoBehaviour
             break;
             case MenuStates.PanIn:
             Debug_Output = "Pan_In";
+            OnMainMenu?.Invoke();   
             break;
             case MenuStates.MenuBanner_NORM:
             Debug_Output = "MenuBanner_NORM";
             break;
             case MenuStates.FREE_Clicked:
+            OnVersus?.Invoke();    
             Debug_Output = "FREE_Clicked";
             break;
             case MenuStates.FREE_Menu_Category:
