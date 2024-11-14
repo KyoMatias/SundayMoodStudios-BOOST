@@ -67,7 +67,7 @@ namespace CarControls
         public float Brake;
         public float Steer;
         public float HorsePower;
-        [SerializeField] private float brakeHorsepower;
+        public float BrakeValue;
         public float Slip;
          public float CarSpeed = 0;
         [SerializeField] private float engineRPM;
@@ -93,6 +93,7 @@ namespace CarControls
             
             InputController();
             GasPedal();
+            BrakePedal();
             Steering();
             Shifter();
             // WheelPosition();
@@ -108,8 +109,6 @@ namespace CarControls
         ShiftDown();
 
     }
-
-
     public void ShiftUp()
     {
         if(Input.GetKeyUp(KeyCode.LeftShift))
@@ -118,7 +117,6 @@ namespace CarControls
             //Deb.Log("Gear Status: UP ");
         }
     }
-
     public void  ShiftDown()
     {
         if(Input.GetKeyUp(KeyCode.LeftControl))
@@ -127,9 +125,6 @@ namespace CarControls
             Debug.Log("Gear Status: DOWN ");
         }
     }
-
-
-
         public void InputController()
         {
             Gas = Input.GetAxis("Vertical");
@@ -149,6 +144,14 @@ namespace CarControls
         public void GasPedal()
         {
             InputReciever.Instance.RecieveGas();
+        }
+
+        public void BrakePedal()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                InputReciever.Instance.RecieveBrake();
+            }
         }
         public void Steering()
         {

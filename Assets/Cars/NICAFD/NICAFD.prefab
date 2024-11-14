@@ -17693,6 +17693,17 @@ MonoBehaviour:
     FR: {fileID: 8208291905608834701}
     BL: {fileID: 2699570614966356060}
     BR: {fileID: 8631006307154071255}
+  SteerAnimations: 0
+  RunThrottle: 0
+  Multiplier: 0
+  Speed: 0
+  steerMultiplier: 0
+  SteerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7622853667174457917
 GameObject:
   m_ObjectHideFlags: 0

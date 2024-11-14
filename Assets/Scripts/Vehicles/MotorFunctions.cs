@@ -8,10 +8,12 @@ public class MotorFunctions : MonoBehaviour
     [SerializeField] private WheelColliderAssign wca;
     [SerializeField] private PlayerController playerController;
     public GameObject PlayerVehicleGO;
+    public GameObject PlayerVehicle;
     private Rigidbody rb ;
     public float CarSpeed;
     void Awake() {
         PlayerVehicleGO = GameObject.FindGameObjectWithTag("Player");
+        PlayerVehicle = GameObject.FindGameObjectWithTag("ActiveVehicle");
         wca = GetComponent<WheelColliderAssign>();
         playerController = PlayerVehicleGO.GetComponentInParent<PlayerController>();
     }
@@ -71,5 +73,17 @@ public class MotorFunctions : MonoBehaviour
         wca.Player_WheelsCollider.FL.steerAngle = steeringAngle;
             wca.Player_WheelsCollider.FR.steerAngle = steeringAngle;
         }
+
+    public void ApplyBrake()
+    {
+        float brakeValue = playerController.Brake * playerController.BrakeValue;
+        
+        PlayerVehicle.GetComponent<Rigidbody>().AddForce(0, 0, -20f, ForceMode.Force);
+        wca.Player_WheelsCollider.FL.brakeTorque = brakeValue;
+        wca.Player_WheelsCollider.FR.brakeTorque = brakeValue;
+        wca.Player_WheelsCollider.RR.brakeTorque = brakeValue;
+        wca.Player_WheelsCollider.FL.brakeTorque = brakeValue;
+        
+    }
          
  }

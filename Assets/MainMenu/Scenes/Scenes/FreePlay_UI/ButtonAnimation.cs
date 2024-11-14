@@ -42,25 +42,11 @@ public class ButtonAnimation : MonoBehaviour
     public void OnMouseDown() 
     {
         onFreeClicked.Invoke();
-        StartCoroutine(WaitTime(4));
+        //SceneLoader.Instance.InitLoadingScreen(4);
+        //StartCoroutine(WaitTime(4));
         OnMenuToFreePlay.Invoke();
         Debug.Log("Button Engaged");
     }
-
-
-    IEnumerator WaitTime(float time)
-    {
-        yield return new WaitForSeconds(time);
-        bool IsSet = false;
-
-        if (!IsSet)
-        {
-            SceneManager.LoadScene("LoadingScreen_General", LoadSceneMode.Single);
-            IsSet = true;
-        }
-    }
-    
-    
 }
 
 

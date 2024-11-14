@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public static SceneLoader Instance;
     [SerializeField] private string MapName;
     
     
@@ -24,4 +25,22 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(MapName, LoadSceneMode.Single);
     }
+
+
+    public void InitLoadingScreen(float loadTime)
+    {
+        StartCoroutine(LoadingScreenTimer(loadTime));
+    }
+    IEnumerator LoadingScreenTimer(float time)
+    {
+        yield return new WaitForSeconds(time);
+        bool IsSet = false;
+
+        if (!IsSet)
+        {
+            SceneManager.LoadScene("LoadingScreen_General", LoadSceneMode.Single);
+            IsSet = true;
+        }
+    }
 }
+

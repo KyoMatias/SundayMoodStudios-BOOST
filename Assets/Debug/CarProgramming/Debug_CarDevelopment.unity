@@ -1433,11 +1433,11 @@ MonoBehaviour:
   Brake: 0
   Steer: 0
   HorsePower: 2000
-  brakeHorsepower: 0
+  BrakeValue: 20
   Slip: 0
   CarSpeed: 0
   engineRPM: 0
-  steerMultiplier: 20
+  steerMultiplier: 10
   SteerCurve:
     serializedVersion: 2
     m_Curve:

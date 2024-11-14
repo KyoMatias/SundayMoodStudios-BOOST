@@ -47,4 +47,9 @@ public class InputReciever : MonoBehaviour
         motorFunctions.ApplySteering();
             
     }
+
+    public void RecieveBrake()
+    {
+        motorFunctions.ApplyBrake();
+    }
 }
