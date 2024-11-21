@@ -1310,7 +1310,7 @@ MonoBehaviour:
   minRPM: 1
   peakRPM: 7
   maxRPM: 10
-  pitchReferenceRPM: 1.4
+  pitchReferenceRPM: 1.3
 --- !u!114 &712446473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,7 +1327,7 @@ MonoBehaviour:
   - {fileID: 712446476}
   - {fileID: 712446472}
   rpm: 0
-  masterVolume: 10
+  masterVolume: 1
 --- !u!114 &712446474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1354,11 +1354,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b9b5106dfa6074aaf3839b02ba9d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1493410398}
-  minRPM: 0.9
-  peakRPM: 2
-  maxRPM: 8
-  pitchReferenceRPM: 0.7
+  source: {fileID: 0}
+  minRPM: 0
+  peakRPM: 0
+  maxRPM: 0
+  pitchReferenceRPM: 0
 --- !u!114 &712446476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1372,10 +1372,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 1706487020}
-  minRPM: 0.9
-  peakRPM: 1
-  maxRPM: 1
-  pitchReferenceRPM: 0.19
+  minRPM: 0
+  peakRPM: 0.9
+  maxRPM: 1.5
+  pitchReferenceRPM: 0
 --- !u!1 &730302057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,12 +1432,12 @@ MonoBehaviour:
   Gas: 0
   Brake: 0
   Steer: 0
-  HorsePower: 2000
-  BrakeValue: 20
+  HorsePower: 200
+  BrakeValue: 0
   Slip: 0
   CarSpeed: 0
   engineRPM: 0
-  steerMultiplier: 10
+  steerMultiplier: 20
   SteerCurve:
     serializedVersion: 2
     m_Curve:

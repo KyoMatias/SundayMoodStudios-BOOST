@@ -16499,10 +16499,10 @@ GameObject:
   - component: {fileID: 1624934838390847398}
   - component: {fileID: 6058524837356219199}
   - component: {fileID: 607889593487405745}
-  - component: {fileID: 2826379435334906004}
-  - component: {fileID: 6215910842273371449}
-  - component: {fileID: 2371149781609058096}
   - component: {fileID: 5929258244569453583}
+  - component: {fileID: 8529361348170039092}
+  - component: {fileID: 8472757356342017392}
+  - component: {fileID: 4151699939539080857}
   m_Layer: 0
   m_Name: PLAY_RX7FD_(STORY_NICA)
   m_TagString: ActiveVehicle
@@ -16591,56 +16591,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2826379435334906004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7146308384056953683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 683785080c7d4b74f8d7461f15fdf56c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wca: {fileID: 6215910842273371449}
-  playerController: {fileID: 0}
-  PlayerVehicleGO: {fileID: 0}
-  CarSpeed: 0
---- !u!114 &6215910842273371449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7146308384056953683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dabbdea8b599e1448b25e9668cfa8f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player_Wheels:
-    FrontLeftMesh: {fileID: 4891715245100871804}
-    FrontRightMesh: {fileID: 8492519783466312887}
-    RearLeftMesh: {fileID: 1740076274943868787}
-    RearRightMesh: {fileID: 7873810090778661222}
-  Player_WheelsCollider:
-    FL: {fileID: 6314568705469882642}
-    FR: {fileID: 4495837060662413574}
-    RL: {fileID: 956082329437910799}
-    RR: {fileID: 184519394262315076}
---- !u!114 &2371149781609058096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7146308384056953683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29a0366af4cf07b4187366cd71da4ac5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5929258244569453583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16654,6 +16604,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EmptiesPV: {fileID: 0}
+--- !u!114 &8529361348170039092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146308384056953683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d966882e45c974893ccd9af8063797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _WCA: {fileID: 4151699939539080857}
+  playerController: {fileID: 0}
+  PlayerVehicleGO: {fileID: 0}
+  PlayerVehicle: {fileID: 0}
+  CarSpeed: 0
+--- !u!114 &8472757356342017392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146308384056953683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec4a829bbfabc3458395774d2a7c789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4151699939539080857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146308384056953683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d3e6ad8e057cb45b8bcb4fb5227765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player_Wheels:
+    FrontLeftMesh: {fileID: 4891715245100871804}
+    FrontRightMesh: {fileID: 8492519783466312887}
+    RearLeftMesh: {fileID: 1740076274943868787}
+    RearRightMesh: {fileID: 7873810090778661222}
+  Player_WheelsCollider:
+    FL: {fileID: 6314568705469882642}
+    FR: {fileID: 4495837060662413574}
+    RL: {fileID: 956082329437910799}
+    RR: {fileID: 184519394262315076}
 --- !u!1 &7152984639255636566
 GameObject:
   m_ObjectHideFlags: 0
