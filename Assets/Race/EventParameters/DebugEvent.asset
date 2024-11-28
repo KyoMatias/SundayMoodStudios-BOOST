@@ -12,8 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d6cbb0a937de489205282a1806685, type: 3}
   m_Name: DebugEvent
   m_EditorClassIdentifier: 
-  EventName: Dance With The Devil
-  Course: Reikomo Downhill
-  Type: 1
-  _typeDisplay: 
-  EventID: 24
+  EventName: Default_Event
+  Course: Default_Map
+  Type: 0
+  MinValue: 1
+  SecValue: 1
+  MillValue: 1
+  CourseTime: 1:1:1
+  Length: 1
+  CourseLength: 1 KM
+  EventID: 100
+  Banner: {fileID: 21300000, guid: 1183d960735cc914ebb05490a02d3e45, type: 3}
+  Rival: {fileID: 11400000, guid: 2829a8b022435744f8ff3fd1dfe40b9e, type: 2}
+  RivalName: Stringname
+  RivalCar: DefaultString
+  RivalTunePower: Galactic

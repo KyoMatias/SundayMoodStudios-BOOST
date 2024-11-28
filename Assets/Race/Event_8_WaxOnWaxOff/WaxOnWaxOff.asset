@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2d6cbb0a937de489205282a1806685, type: 3}
+  m_Name: WaxOnWaxOff
+  m_EditorClassIdentifier: 
+  EventName: Wax on, Wax off
+  Course: Zen Neon
+  Type: 5
+  MinValue: 1
+  SecValue: 45
+  MillValue: 346
+  CourseTime: 1:45:346
+  Length: 1.4
+  CourseLength: 1.4 KM
+  EventID: 8
+  Banner: {fileID: 21300000, guid: c99f76b6e072d99438cbadd9e9eb9b19, type: 3}
+  Rival: {fileID: 11400000, guid: 12e0fb273263bee4d80bf196659b6a51, type: 2}
+  RivalName: Donghan Kim
+  RivalCar: Nissan 370Z (Fairlady Z Z34)
+  RivalTunePower: Comet

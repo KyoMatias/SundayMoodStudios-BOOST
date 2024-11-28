@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9922ffa2947449e4eb3cc206e66e5db3, type: 3}
+  m_Name: Donghan
+  m_EditorClassIdentifier: 
+  R_Name: Donghan Kim
+  R_Description: Antagonist/Aggressive Drifter/Vildred Crew Member/Joon's Younger
+    Brother/Rival
+  R_Clan: Vildreds
+  Car: Nissan 370Z (Fairlady Z Z34)
+  CarHp: 275
+  CarUpgradeLvl: 3
+  CarRank: 67
+  TunePower: Comet
+  TunePowerType: 2

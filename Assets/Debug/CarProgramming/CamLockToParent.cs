@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CamLockToParent : MonoBehaviour
 {
-    [SerializeField]private GameObject CarGO;
+    public GameObject CarGO;
 
     private void Awake()
     {
@@ -16,6 +16,10 @@ public class CamLockToParent : MonoBehaviour
     {
         CarGO =GameObject.FindGameObjectWithTag("ActiveVehicle");
     }
+
+
+
+
 
     // Update is called once per frame
     void FixedUpdate()

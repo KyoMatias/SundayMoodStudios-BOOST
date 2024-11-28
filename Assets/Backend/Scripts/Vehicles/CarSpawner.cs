@@ -28,15 +28,14 @@ public class CarSpawner : MonoBehaviour
         FindPlayerVehicle();
     }
 
-    private void Update() {
+    private void 
+        Update() {
         
     }
 
     void FindPlayerVehicle()
     {
         SpawnPlayerCar();
-
-
         playerCar = GameObject.FindGameObjectWithTag("ActiveVehicle");
         Debug.Log("Finding Car");
         if(playerCar != null)
@@ -44,9 +43,9 @@ public class CarSpawner : MonoBehaviour
             Debug.Log("CarFound");
         }
         
-        else 
+        else
         {
-         SpawnPlayerCar();
+            SpawnPlayerCar();
         }
     }
 
@@ -54,4 +53,5 @@ public class CarSpawner : MonoBehaviour
     {
         Instantiate(playerCar, transform.position, quaternion.identity);
     }
+    
 }
