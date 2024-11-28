@@ -3,10 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum R_TunePowerName
+{
+    Aster,
+    Meteor,
+    Comet,
+    Nebula,
+    Pulsar,
+    Quasar,
+    Supernova,
+    Horizon,
+    Singularity,
+    Galactic,
+}
+
 [CreateAssetMenu(fileName = "RivalComponent", menuName = "Rival")]
 public class RivalStats : ScriptableObject
 {
     public string R_Name;
+    [TextArea]
     public string R_Description;
     public string R_Clan;
     public string Car;
@@ -14,59 +29,46 @@ public class RivalStats : ScriptableObject
     public int CarUpgradeLvl;
     public char CarRank;
     public string TunePower;
-    public TunePowerName TunePowerType;
-    
-    public enum TunePowerName
-    {
-        Aster,
-        Meteor,
-        Comet,
-        Nebula,
-        Pulsar,
-        Quasar,
-        Supernova,
-        Horizon,
-        Singularity,
-        Galactic,
-    }
+    public R_TunePowerName TunePowerType;
+
 
     private void OnEnable()
     {
         CalculateTunePower();
     }
-
+    
     private void CalculateTunePower()
     {
         switch (TunePowerType)
         {
-            case TunePowerName.Aster:
+            case R_TunePowerName.Aster:
                 TunePower = "Aster";
                 break;
-            case TunePowerName.Meteor:
+            case R_TunePowerName.Meteor:
                 TunePower = "Meteor";
                 break;
-            case TunePowerName.Comet:
+            case R_TunePowerName.Comet:
                 TunePower = "Comet";
                 break;
-            case TunePowerName.Nebula:
+            case R_TunePowerName.Nebula:
                 TunePower = "Nebula";
                 break;
-            case TunePowerName.Pulsar:
+            case R_TunePowerName.Pulsar:
                 TunePower = "Pulsar";
                 break;
-            case TunePowerName.Quasar:
+            case R_TunePowerName.Quasar:
                 TunePower = "Quasar";
                 break;
-            case TunePowerName.Supernova:
+            case R_TunePowerName.Supernova:
                 TunePower = "Supernova";
                 break;
-            case TunePowerName.Horizon:
+            case R_TunePowerName.Horizon:
                 TunePower = "Horizon";
                 break;
-            case TunePowerName.Singularity:
+            case R_TunePowerName.Singularity:
                 TunePower = "Singularity";
                 break;
-            case TunePowerName.Galactic:
+            case R_TunePowerName.Galactic:
                 TunePower = "Galactic";
                 break;
             default:

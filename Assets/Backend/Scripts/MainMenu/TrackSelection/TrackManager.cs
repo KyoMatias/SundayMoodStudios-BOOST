@@ -10,6 +10,11 @@ public class TrackManager : MonoBehaviour
     public string D_EventString;
     public string D_MapString;
 
+    public string P_StringName;
+    public string P_Car;
+    public string P_TunePower;
+    
+    
     public string O_StringName;
 
     public string O_Car;

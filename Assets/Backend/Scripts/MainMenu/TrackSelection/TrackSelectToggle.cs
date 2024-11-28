@@ -37,6 +37,9 @@ public class TrackSelectToggle : MonoBehaviour
     {
         TManager.D_EventString = EventParameters.GetEventName();
         TManager.D_MapString = EventParameters.GetCourse();
+        TManager.P_StringName = EventParameters.PlayerName;
+        TManager.P_Car = EventParameters.PlayerCar;
+        TManager.P_TunePower = EventParameters.PlayerTunePower;
         TManager.O_StringName = EventParameters.RivalName;
         TManager.O_Car = EventParameters.RivalCar;
         TManager.D_TunePower = EventParameters.RivalTunePower;

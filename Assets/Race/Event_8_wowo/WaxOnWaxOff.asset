@@ -24,6 +24,10 @@ MonoBehaviour:
   EventID: 8
   Banner: {fileID: 21300000, guid: c99f76b6e072d99438cbadd9e9eb9b19, type: 3}
   Rival: {fileID: 11400000, guid: 12e0fb273263bee4d80bf196659b6a51, type: 2}
+  Player: {fileID: 11400000, guid: e21a5148541418446bd1ceb645670ae0, type: 2}
   RivalName: Donghan Kim
   RivalCar: Nissan 370Z (Fairlady Z Z34)
   RivalTunePower: Comet
+  PlayerName: Hitomi Nakazato
+  PlayerCar: Toyota Supra MKIV
+  PlayerTunePower: Galactic

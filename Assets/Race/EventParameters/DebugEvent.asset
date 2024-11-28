@@ -24,6 +24,10 @@ MonoBehaviour:
   EventID: 100
   Banner: {fileID: 21300000, guid: 1183d960735cc914ebb05490a02d3e45, type: 3}
   Rival: {fileID: 11400000, guid: 2829a8b022435744f8ff3fd1dfe40b9e, type: 2}
+  Player: {fileID: 11400000, guid: c2238fea64d0c1544a9efe7e57694702, type: 2}
   RivalName: Stringname
   RivalCar: DefaultString
   RivalTunePower: Galactic
+  PlayerName: 
+  PlayerCar: 
+  PlayerTunePower: 

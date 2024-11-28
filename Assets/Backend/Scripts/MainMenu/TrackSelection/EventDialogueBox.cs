@@ -11,8 +11,10 @@ public class EventDialogueBox : MonoBehaviour
 
     public TextMeshProUGUI Default_MapString;
 
+    public TextMeshProUGUI Player_StringName;
+    public TextMeshProUGUI Player_Car;
+    public TextMeshProUGUI Player_TunePower;
     public TextMeshProUGUI Opponent_StringName;
-
     public TextMeshProUGUI Opponent_Car;
     public TextMeshProUGUI Opponent_TunePower;
 
@@ -37,6 +39,9 @@ public class EventDialogueBox : MonoBehaviour
         
         Default_EventString.SetText("Event: " + trackManager.D_EventString);
         Default_MapString.SetText("Map: " + trackManager.D_MapString);
+        Player_StringName.SetText("Player: " + trackManager.P_StringName);
+        Player_Car.SetText("Car: " + trackManager.P_Car);
+        Player_TunePower.SetText("Tune Power: " + trackManager.P_TunePower);
         Opponent_StringName.SetText("Rival: " + trackManager.O_StringName);
         Opponent_Car.SetText("Car: " + trackManager.O_Car);
         Opponent_TunePower.SetText("Tune Power: " + trackManager.D_TunePower);

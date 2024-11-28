@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00638e8ebea78c542abba7b7f1c3ef56, type: 3}
+  m_Name: Hitomi
+  m_EditorClassIdentifier: 
+  P_Name: Hitomi Nakazato
+  P_Description: "-Growing up from a broken family that consists of an alcoholic
+    mother, a missing father, and a gang influenced older brother, Hitomi was tired
+    of her atmosphere as she felt like every one was a black sheep. \r\n\r\n-After
+    meeting her only best friend back in junior high, Hitomi and Rinoa was inseperable.
+    Until Rinoa changed and started to hangout with a frat/gang group. This ended
+    the friendship of the two with a brutal ending. \r\n\r\n-Before she graduated,
+    She met Ken Sakamoto while walking home from school and soon was drop-dead in
+    love with the guy. They found themselves dating and Hitomi moved out of her household
+    to live with him. Ken was also a car geek like Hitomi, but Ken was an experienced
+    street racer. He invited her to his workshop where he worked on his vehicles,
+    there Hitomi met Nica Murasaki and Yuzuki Tsuchiya, Ken's College friends. they
+    soon worked around the workshop and Ken even gifted Hitomi one of his stock cars.
+    A black 1994 Mk4 Toyota Supra which Hitomi would later paint Olive green. Ken
+    decided to group them in a crew and named themselves V&B (Vrooms and Braps)."
+  P_Clan: V&B
+  P_Car: Toyota Supra MKIV
+  P_CarHP: 588
+  P_CarUpgradeLvl: 10
+  P_CarRank: 83
+  P_TunePower: Galactic
+  TunePowerType: 9

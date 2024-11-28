@@ -37,17 +37,21 @@ public class EventParamSO : ScriptableObject
     [SerializeField] private int EventID;
     public Sprite Banner;
     public RivalStats Rival;
+    public PlayerStats Player;
     
     [Header("Rival Stats")]
     public string RivalName;
-
     public string RivalCar;
     public string RivalTunePower;
-
+    [Header("Player Stats")]
+    public string PlayerName;
+    public string PlayerCar;
+    public string PlayerTunePower;
     private void OnEnable()
     {
         DisplayEventType();
         FetchRivalStats();
+        FetchPlayerStats(); 
         CalculateTime();
         PrintLength();
         GetCourseTime();
@@ -73,6 +77,7 @@ public class EventParamSO : ScriptableObject
     {
         return TypeDisplay;
     }
+
 
     public string GetCourseTime()
     {
@@ -118,7 +123,7 @@ public class EventParamSO : ScriptableObject
                 TypeDisplay = "Duel Pursuit";
                 break;
             case EventType.Cinematic:
-                TypeDisplay = "Story Chapter";
+                TypeDisplay = "Movie";
                 break;
             case EventType.Quest:
                 TypeDisplay = "Expedition";
@@ -136,6 +141,13 @@ public class EventParamSO : ScriptableObject
         RivalName = Rival.R_Name;
         RivalCar = Rival.Car;
         RivalTunePower = Rival.TunePower;
+    }
+
+    void FetchPlayerStats()
+    {
+        PlayerName = Player.P_Name;
+        PlayerCar = Player.P_Car;
+        PlayerTunePower = Player.P_TunePower;
     }
 
     void CalculateTime()

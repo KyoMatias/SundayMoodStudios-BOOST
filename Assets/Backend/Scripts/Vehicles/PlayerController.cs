@@ -151,7 +151,7 @@ namespace CarControls
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 
-                MasterInputReceiver.Instance.RecieveBrake();
+                //MasterInputReceiver.Instance.RecieveBrake();
             }
         }
         public void Steering()

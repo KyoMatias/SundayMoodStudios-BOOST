@@ -35,9 +35,9 @@ public class MasterInputReceiver : MonoBehaviour
             
     }
 
-    public void RecieveBrake()
+    /*public void RecieveBrake()
     {
         _vehicleControl.ApplyBrake();
     }
-
+    */
 }

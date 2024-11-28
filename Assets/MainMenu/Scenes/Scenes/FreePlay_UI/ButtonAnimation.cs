@@ -42,9 +42,8 @@ public class ButtonAnimation : MonoBehaviour
     public void OnMouseDown() 
     {
         onFreeClicked.Invoke();
-        //SceneLoader.Instance.InitLoadingScreen(4);
-        //StartCoroutine(WaitTime(4));
         OnMenuToFreePlay.Invoke();
+        SceneManager.LoadScene("LoadingScreen_General", LoadSceneMode.Single);
         Debug.Log("Button Engaged");
     }
 }
