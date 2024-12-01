@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TrackSelectToggle : MonoBehaviour
 {
+
     public Toggle TrackToggle;
     public EventParamSO EventParameters;
     private TrackManager TManager;
@@ -26,6 +27,12 @@ public class TrackSelectToggle : MonoBehaviour
     }
 
     public void SendEvent(bool value)
+    /*
+     * Checks what EventID is currently active and
+     * sends the data to the selected graphic.
+     * Tracks the selected data and if confirmed
+     * will select the current track as main.
+     */
     {
         if (value)
         {
@@ -33,7 +40,9 @@ public class TrackSelectToggle : MonoBehaviour
             Debug.Log(EventParameters.GetEventID());
         }
     }
-    void UpdateStatsToManager()
+    
+    void UpdateStatsToManager() 
+    // Sends all data to Canvas, All Parameters are checked and evaluated.
     {
         TManager.D_EventString = EventParameters.GetEventName();
         TManager.D_MapString = EventParameters.GetCourse();
