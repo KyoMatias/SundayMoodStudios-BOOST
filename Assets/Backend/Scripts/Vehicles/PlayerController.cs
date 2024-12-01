@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.InputSystem.LowLevel;
 
@@ -40,6 +41,7 @@ namespace CarControls
         [SerializeField] private TransmissionSettings currentTransmission;
         [SerializeField] private DriveMode currentDriveMode;
         public static Drivetype CurrentDriveType;
+        [SerializeField] private Drivetype driveType;
         [SerializeField] private CarStat currentCarStat;
 
         public enum Gear
@@ -55,9 +57,6 @@ namespace CarControls
         Sixth = 6,
         Seventh = 7,
         }
-
-        [Header("Script Fetcher")]
-        public MasterInputReceiver inputReciever;
 
 
 
@@ -82,13 +81,6 @@ namespace CarControls
         private void Awake() {
             _gearsLogic = GetComponentInChildren<GearsLogic>();
         }
-
-        private void Start() {
-            
-        }
-
-
-
         public void Update() {
             
             InputController();
@@ -96,18 +88,17 @@ namespace CarControls
             BrakePedal();
             Steering();
             Shifter();
+            FetchCarStats();
             // WheelPosition();
             // ApplyThrottle();
             // ApplySteering();
             // GearSwitch();
-        }
-
-
+        } 
+        
     void Shifter()
     {
         ShiftUp();
         ShiftDown();
-
     }
     public void ShiftUp()
     {
@@ -123,6 +114,37 @@ namespace CarControls
         {
             _gearsLogic.GearShiftDown();
             Debug.Log("Gear Status: DOWN ");
+        }
+    }
+
+    void FetchCarStats()
+    {
+        GetDriveTrain();
+        GetEngineParameters();
+    }
+
+    void GetEngineParameters()
+    {
+        HorsePower = currentCarStat.HP;
+    }
+    void GetDriveTrain()
+    {
+        switch (currentCarStat.PresetDriveTrain)
+        {
+            case CarStat.CarStatDriveTrain.AWD:
+                CurrentDriveType = Drivetype.AllWheel;
+                break;
+            case CarStat.CarStatDriveTrain.FWD:
+                CurrentDriveType = Drivetype.FourWheel;
+                break;
+            case CarStat.CarStatDriveTrain.RWD:
+                CurrentDriveType = Drivetype.RearWheel;
+                break;
+            case CarStat.CarStatDriveTrain.FOURWD:
+                CurrentDriveType = Drivetype.FourWheel;
+                break;
+            default:
+                break;
         }
     }
         public void InputController()

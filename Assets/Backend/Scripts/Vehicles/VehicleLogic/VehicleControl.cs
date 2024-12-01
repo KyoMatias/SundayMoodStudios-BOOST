@@ -14,7 +14,6 @@ public class VehicleControl : MonoBehaviour
     void Awake() {
         PlayerVehicleGO = GameObject.FindGameObjectWithTag("Player");
         PlayerVehicle = GameObject.FindGameObjectWithTag("ActiveVehicle");
-        _WCA = GetComponent<WCAssign>();
         playerController = PlayerVehicleGO.GetComponentInParent<PlayerController>();
     }
     // Start is called before the first frame update
