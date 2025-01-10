@@ -24,6 +24,7 @@ public class KeyManager : MonoBehaviour
         "SPG-LT91-KXRM",
         "GMSP-XI8T-RQ41"
     };
+    public HashSet<string> Keys = new HashSet<string>();  
 
     private void Awake()
     {
