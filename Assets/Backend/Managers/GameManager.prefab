@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2583965646080195692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1347453147949237409}
+  - component: {fileID: 8743985489355750498}
+  - component: {fileID: 2047610883125958175}
+  - component: {fileID: 6924071741234595292}
+  - component: {fileID: 9196451025944225854}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1347453147949237409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583965646080195692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8743985489355750498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583965646080195692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d025d18e28dda2445a4b1f7cc6e01c2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 2047610883125958175}
+  keyManager: {fileID: 9196451025944225854}
+  GameStatus: 0
+  Story: 0
+  MasterKey: {fileID: 11400000, guid: 1aeb96c0fec679b42a83fce71bc79543, type: 2}
+  playerName: Kyoko
+  Username: KyokoFD
+  playerAccountRegisteredStatus: 1
+  CurrentCharacter: 0
+  DrawDebugUI: 0
+  DeveloperProperties:
+    Build: Under-Development
+    GameVersion: 1.0
+    Registered: 0
+    RegistrationID: 
+    DeveloperMode: 0
+    DeveloperModeEnabled: 0
+    Key: {fileID: 11400000, guid: a6bbf3b5af01870418729a6776984da9, type: 2}
+  activeState: 2
+--- !u!114 &2047610883125958175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583965646080195692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3f9bb26e09fbe4494e558e4d2626b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6924071741234595292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583965646080195692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd41b237d3d1825498e280190ea1669e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoostManager: {fileID: 8743985489355750498}
+--- !u!114 &9196451025944225854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2583965646080195692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7091ef46907a2b84c952d8057bd9d8b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentID: 
+  GenKeys:
+  - SpGm-C1IT-X94B
+  - SGC-X9TQ-KR71
+  - SPD-31G-CI2T
+  - XSG-459-BQTI
+  - SPC-G88T-K942
+  - Z4GM-CI-LQ21
+  - SCG-T94I-58XP
+  - SG-XQ10-C91T
+  - SCPD-IT4G-6X23
+  - SGX-C1QT-R96B
+  - SPGM-42I9-BQ4T
+  - C7G-SDPT-93IT
+  - SGQ-58IT-KR4X
+  - SPG-LT91-KXRM
+  - GMSP-XI8T-RQ41

@@ -6,11 +6,50 @@ using UnityEngine.UIElements.Experimental;
 
 public class BOOST_Manager : MonoBehaviour
 {
+    [Header("Managers")]
     public static BOOST_Manager instance;
+
+    public GameManager gameManager;
+    public KeyManager keyManager;
+    
+    
+    
     [Header("Game Parameters")]
-    public PlayStatus GameStatus;
+    public GameEnvironment GameStatus;
     public StoryStatus Story;
-    public enum PlayStatus{
+    public MasterKey MasterKey;
+    
+    /*
+    These paramenters are considered static from the initialization phase,
+    All variables are required in order for a PlayerProfile to be created.
+    The game will rely on these variables ona medium scale and creates a potential
+    to create multiple player profiles in future development.
+    */
+    
+    [Header("Player Parameters")] 
+    [SerializeField] private string playerName; //Player name is the player's actual name (to be prompted during registration or invitation)
+    [SerializeField] private string Username; // The Username is the player's in-game name, to be used on main menu's and event records.
+    [SerializeField] private bool playerAccountRegisteredStatus;// [TBA Featured] To ensure the game is properly licensed and official. (to prevent piracy and ensure the player is either given permission)
+    public StoryCharacter CurrentCharacter;// Determines the Story Chapter's current character selected by the player 
+
+
+
+
+
+
+    public enum StoryCharacter // shows the cureent story character selected for the profile showcase.
+    {
+        FreePlayer,
+        Hitomi_Nakazato,
+        Ken_Sakamoto,
+        Nica_Murasaki,
+        Yuzuki_Tsuchiya,
+        Rinoa_Ahn,
+    }
+    
+    [Header("DEBUG PARAMETERS")]
+    public bool DrawDebugUI;
+    public enum GameEnvironment{
         Developer,
         Showcase,
         Alpha,
@@ -22,6 +61,7 @@ public class BOOST_Manager : MonoBehaviour
         PlayTest,
         Live
     }
+    
 
     public enum StoryStatus
     {
@@ -42,8 +82,12 @@ public class BOOST_Manager : MonoBehaviour
     public class BOOST_Developer
     {
         public string Build;
-        
-
+        public string GameVersion;
+        public bool Registered;
+        public string RegistrationID;
+        public bool DeveloperMode;
+        public bool DeveloperModeEnabled;
+        public MasterKey Key;
     }
 
     public BOOST_Developer DeveloperProperties;
@@ -73,7 +117,65 @@ public class BOOST_Manager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        GetRegistrationID(DeveloperProperties);
+        CheckRegistration(DeveloperProperties, MasterKey);
 
+        FetchScripts();
+    }
+    private void FetchScripts()
+    {
+    }
+
+    public void GetRegistrationID(BOOST_Developer Developer)
+    {
+        string RegID = Developer.Key.MasterValue;
+        SetRegistrationID(RegID);
+    }
+
+    public void SetRegistrationID(string ID)
+    {
+        if (keyManager.CurrentID == null)
+        {
+            Debug.Log("No valid keys are in the database");
+        }
+        else
+        {
+            Debug.Log($"Key is registered as : CURRENT [{ID}]: in the keyManager");
+            keyManager.CurrentID = ID;
+        }
+    }
+
+
+    // This function takes in the paramters of the Developer and Masterkey Variables and Checks if the Values Match.
+    public void CheckRegistration(BOOST_Developer Developer, MasterKey masterKey)
+    {
+        Debug.Log(masterKey.MasterValue);//Prints in Console the actual value.
+        Debug.Log(Developer.Key.MasterValue);//Prints in the Console the actual value.
+
+        /*
+         * Main Checker Function (NEEDS TO BE UPDATED TO WORK WITH A PIRACY SCRIPT)
+         * Check if interface methods are viable for creating the network scripts.
+         * To ensure the copies/playtesting are valid from developer.
+         *
+         * 1. Needs more Elaboration and try to use tasks.
+         * 2. Develop a better system for numerous keys.
+         * 3. Create a series of master keys to be implemented as official keys.
+         *
+         */
+
+
+
+
+        /*
+         * Steps for better key checker:
+         *
+         * 1. for loop
+         */
+    }
+
+    public bool RegisterGame(bool parms)
+    {
+        return DeveloperProperties.Registered = parms;
     }
     public string BuildVersion()
     {

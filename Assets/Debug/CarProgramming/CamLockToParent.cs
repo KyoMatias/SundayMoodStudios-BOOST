@@ -9,13 +9,9 @@ public class CamLockToParent : MonoBehaviour
 
     private void Awake()
     {
-        
+        CarGO = GameObject.FindGameObjectWithTag("ActiveVehicle");
     }
 
-    void Start()
-    {
-        CarGO =GameObject.FindGameObjectWithTag("ActiveVehicle");
-    }
 
 
 
@@ -32,6 +28,6 @@ public class CamLockToParent : MonoBehaviour
 
     void ConnectPlayerCar()
     {
-        this.transform.SetParent(CarGO.transform);
+        transform.SetParent(CarGO.transform);
     }
 }
