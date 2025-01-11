@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -633,6 +633,10 @@ PrefabInstance:
     - target: {fileID: 7590994253303277504, guid: a2a5157b6b8907d449fbd4cbf05645c7, type: 3}
       propertyPath: m_Name
       value: NICAFD
+      objectReference: {fileID: 0}
+    - target: {fileID: 7590994253303277504, guid: a2a5157b6b8907d449fbd4cbf05645c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1246,6 +1250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6700496012720715229}
   - component: {fileID: 4520843065275356961}
+  - component: {fileID: 6700496012720715230}
   m_Layer: 0
   m_Name: PV_Body
   m_TagString: Untagged
@@ -1558,8 +1563,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -1.0633333, z: 0}
   m_LocalScale: {x: 1.6666665, y: 1.6666665, z: 1.6666665}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6328786736542190690}
+  m_Children: []
   m_Father: {fileID: 5886958341085162109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!223 &2043061832465628805
@@ -2950,6 +2954,7 @@ Transform:
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 6328786736542190690}
   - {fileID: 1933528163998920424}
   m_Father: {fileID: 6700496012720715229}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3157,13 +3162,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6471372189213363483}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000015695824, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.6519174, z: 0}
-  m_LocalScale: {x: 0.9362979, y: 0.6453726, z: 2.1325488}
+  m_LocalRotation: {x: -0.00000015695824, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.023195643, z: 0}
+  m_LocalScale: {x: 1.5604963, y: 1.0756209, z: 3.5542476}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3467244758417310742}
-  m_Father: {fileID: 1933528163998920424}
+  m_Father: {fileID: 5886958341085162109}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6417639238074653651
 Rigidbody:
@@ -3573,6 +3578,26 @@ Transform:
   - {fileID: 4435395125420290619}
   m_Father: {fileID: 1146632751531653942}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6700496012720715230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541479033563222305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcef4bab2dc5599469b421e968172196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CarMesh:
+  - {fileID: 100134818355312744, guid: a61c35c22829d474d83c8504d357dd63, type: 3}
+  - {fileID: -7760691531743244125, guid: d2be3dc182ae3c6489dce38597d784bc, type: 3}
+  MeshFilter: {fileID: 382991747488552647}
+  Counter: 0
+  ToSwap:
+    BodyMesh: {fileID: 0}
+    Wheels: {fileID: 0}
 --- !u!1 &6702160746922169871
 GameObject:
   m_ObjectHideFlags: 0
@@ -4503,7 +4528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9168767920256420144
 Transform:
   m_ObjectHideFlags: 0
